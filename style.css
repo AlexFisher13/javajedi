@@ -18,13 +18,18 @@ h1 {
   margin: 10px 20px;
 }
 h2 {
-  font-size: 1.5em;
-  margin: 10px 20px;
+  font-size: 1.7em;
+  margin: 2em 0 1.2em 0;
+}
+h3 {
+  font-size: 1.2em;
+  margin: .5em 0;
 }
 p {
   font-size: 1.1em;
-  margin: 1em 0;
+  margin: .5em 0 1em 0;
   line-height: 1.5em;
+  text-align: justify;
 }
 a {
   text-decoration: none;
@@ -41,10 +46,15 @@ mark {
 code {
   font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
   font-weight: lighter;
-  font-size: 12px;
+  font-size: 1em;
+  background-color: #c8eef4;
+  color: #004715;
 }
 hr {
   margin: 35px 0;
+}
+li {
+  line-height: 1.5em;
 }
 
 
@@ -57,12 +67,15 @@ hr {
   background-color: #2c2f36;
   height: 100vh;
 }
-li {
+.list li {
   padding: 5px;
   list-style-type: none;
   padding-left: 0;
 }
 .content {
     width: 70%;
-    margin: 30px auto;
+    margin: 0 auto;
+}
+.decimal {
+  list-style-type: decimal;
 }
