@@ -25,6 +25,7 @@ ul {
   cursor: pointer;
   border: 0px;
   outline: none;
+  margin: 20px;
 }
 .menu-btn:hover {
   opacity: 0.6;
