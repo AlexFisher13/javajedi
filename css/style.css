@@ -10,12 +10,13 @@ body {
 }
 header {
   background-color: #21232a;
-  padding: 20px;
+  padding: 1.2em;
   color: rgb(97, 218, 251);
 }
 h1 {
-  font-size: 2em;
-  margin: 10px 20px;
+  font-size: 1.8em;
+  margin: .1em;
+  text-align: center;
 }
 h2 {
   font-size: 1.7em;
@@ -35,10 +36,6 @@ a {
   text-decoration: none;
   outline: none;
   color: white;
-  font-size: 1.2em;
-}
-a:hover {
-  border-bottom: 1px solid white;
 }
 mark {
   background-color: rgba(255,229,100,0.2);
@@ -55,6 +52,9 @@ hr {
 }
 li {
   line-height: 1.5em;
+}
+#welcome {
+  text-align: center;
 }
 
 
