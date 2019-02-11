@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>JavaJedi</title>
+        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <!-- Pushy CSS -->
+        <link rel="stylesheet" href="css/pushy.css">
+        <!-- My styles -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <header><h1>JavaJedi</h1></header>
+
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-left" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+                    <li class="pushy-submenu">
+                        <button id="first-link">Базы данных</button>
+                        <ul>
+                            <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
+                            <li class="pushy-link"><a href="#">Транзакции</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Протоколы</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">HTTP</a></li>
+                            <li class="pushy-link"><a href="#">SOAP</a></li>
+                            <li class="pushy-link"><a href="#">REST</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Автотестирование</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">BDD и TDD</a></li>
+                            <li class="pushy-link"><a href="#">Selenuim</a></li>
+                            <li class="pushy-link"><a href="#">TestNG и JUnit</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Паттерны</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Singleton</a></li>
+                            <li class="pushy-link"><a href="#">Factory</a></li>
+                            <li class="pushy-link"><a href="#">Adapter</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Spring</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Spring Context</a></li>
+                            <li class="pushy-link"><a href="#">Spring Boot</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link"><a href="git.html">Git</a></li>
+                    <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+                    <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
+                    <li class="pushy-link"><a href="maven.html">Maven</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div id="container">
+            <!-- Menu Button -->
+            <button class="menu-btn">&#9776; Menu</button>
+            <div class="content">
+                <h2>Apache Maven</h2>
+                <p>Apache Maven – фреймворк для автоматизации сборки проектов. Кроме сборки проектов Maven позволяет сгенерировать каркас проекта и управлять зависимостями внутри проекта и импортом сторонних библиотек из своего огромного репозитория.</p>
+                <h3>pom.xml</h3>
+                <p>Информация для сборки проекта находится в <b>pom.xml</b> файле. При запуске Maven проверяет, содержит ли конфигурационный файл все необходимые данные и все ли данные синтаксически правильно записаны.<br>
+                Минимальная конфигурация включает версию конфигурационного файла, имя проекта, его автора и версию. С помощью pom.xml конфигурируются зависимости от других проектов, а также список плагинов, реализующий порядок сборки.<br>
+                Также pom.xml может быть унаследован от другой pom теге parent.<br>
+                Ключевым понятием Maven является <b>артефакт</b> — это, по сути, любая библиотека, хранящаяся в репозитории. Это может быть какая-то зависимость или плагин.<br>
+                <b>Зависимости</b> — это те библиотеки, которые непосредственно используются в вашем проекте для компиляции кода или его тестирования.<br>
+                <b>Плагины</b> же используются самим Maven'ом при сборке проекта или для каких-то других целей (деплоймент, создание файлов проекта для Eclipse и др.).<br>
+                <b>.m2</b> - папка куда буду выкачиваться наши зависимости<br>
+                <b>settings.xml</b> - конфигурационный файл указывающий мавену из каких испточников качать br>
+            </p>
+            <h3>Структура папок</h3>
+            <p>При работе с maven необходимо соблюдать соглашение о стандартной стуктуре папок:</p>
+            <ul class="pointless">
+                <li><b>Корневой каталог проекта:</b> файл pom.xml и все дальнейшие подкаталоги</li>
+                <li><b>src:</b> все исходные файлы</li>
+                <li><b>src/main:</b> исходные файлы собственно для продукта</li>
+                <li><b>src/main/java:</b> Java-исходный код</li>
+                <li><b>src/main/resources:</b> другие файлы, которые используются при компиляции или исполнении, например Properties-файлы</li>
+                <li><b>src/main/webapp/WEB-INF/web.xml</b> – файл конфигурации web-проекта</li>
+                <li><b>src/test:</b> исходные файлы, необходимые для организации автоматического тестирования</li>
+                <li><b>src/test/java:</b> JUnit-тест-задания для автоматического тестирования</li>
+                <li><b>target:</b> все создаваемые в процессе работы Мавена файлы</li>
+                <li><b>target/classes:</b> компилированные Java-классы</li>
+            </ul>
+            <h3>Жизненный цикл (фазы сборки проекта)</h3>
+            <ul class="pointless">
+                <li><b>сlean</b> — фаза очистки проекта.</li>
+                <li><b>validate</b> – фаза проверки, является ли структура проекта полной и правильной.</li>
+                <li><b>compile</b> – компилируются исходного кода.</li>
+                <li><b>test</b> – фаза тестирования собранного кода, заранее подготовленным набором тестов.</li>
+                <li><b>package</b> – упаковка откомпилированных классов и прочих ресурсов. Например, в JAR-файл.</li>
+                <li><b>verify</b> – эта фаза сама по себе ничего неделает, на нее могут назначаться плагины, попадающие под описание: "выполнение любых проверок для верификации пакета на валидность и соответствие критериям качества".</li>
+                <li><b>install</b> – установка программного обеспечения в локальный Maven-репозиторий, чтобы сделать его доступным для других проектов текущего пользователя.</li>
+                <li><b>site</b> – жизненный цикл генерации проектной документации.</li>
+                <li><b>deploy</b> – стабильная версия программного обеспечения распространяется на удаленный Maven-репозиторий, чтобы сделать его доступным для других пользователей.</li>
+            </ul>
+            </div>
+        </div>
+
+        <footer></footer>
+
+        <script src="js/pushy.min.js"></script>
+    </body>
+</html>

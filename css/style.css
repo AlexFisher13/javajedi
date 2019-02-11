@@ -24,11 +24,11 @@ h2 {
 }
 h3 {
   font-size: 1.2em;
-  margin: .5em 0;
+  margin: 2em 0 .5em 0;
 }
 p {
   font-size: 1.1em;
-  margin: .5em 0 1em 0;
+  margin: .5em 0;
   line-height: 1.5em;
   text-align: justify;
 }
