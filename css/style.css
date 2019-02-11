@@ -32,6 +32,10 @@ p {
   line-height: 1.5em;
   text-align: justify;
 }
+li {
+  text-align: justify;
+  line-height: 1.5em;
+}
 a {
   text-decoration: none;
   outline: none;
@@ -49,9 +53,6 @@ code {
 }
 hr {
   margin: 35px 0;
-}
-li {
-  line-height: 1.5em;
 }
 #welcome {
   text-align: center;
@@ -81,4 +82,7 @@ footer {
 }
 .decimal {
   list-style-type: decimal;
+}
+.pointless {
+  list-style-type: none;
 }
