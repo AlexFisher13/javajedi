@@ -83,6 +83,7 @@ footer {
 .decimal {
   list-style-type: decimal;
 }
-.pointless {
+.pointless li {
   list-style-type: none;
+  text-align: justify;
 }
