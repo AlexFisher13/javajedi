@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>JavaJedi</title>
+        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <!-- Pushy CSS -->
+        <link rel="stylesheet" href="css/pushy.css">
+        <!-- My styles -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <header><h1>JavaJedi</h1></header>
+
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-left" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+                    <li class="pushy-submenu">
+                        <button>Web</button>
+                        <ul>
+                            <li class="pushy-link"><a href="internet.html">Internet</a></li>
+                            <li class="pushy-link"><a href="http.html">HTTP</a></li>
+                            <li class="pushy-link"><a href="webservices.html">Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Базы данных</button>
+                        <ul>
+                            <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
+                            <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Автотестирование</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">BDD и TDD</a></li>
+                            <li class="pushy-link"><a href="#">Selenuim</a></li>
+                            <li class="pushy-link"><a href="#">TestNG и JUnit</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Паттерны</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Singleton</a></li>
+                            <li class="pushy-link"><a href="#">Factory</a></li>
+                            <li class="pushy-link"><a href="#">Adapter</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Spring</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Spring Context</a></li>
+                            <li class="pushy-link"><a href="#">Spring Boot</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link"><a href="git.html">Git</a></li>
+                    <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+                    <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
+                    <li class="pushy-link"><a href="maven.html">Maven</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div id="container">
+            <!-- Menu Button -->
+            <button class="menu-btn">&#9776; Menu</button>
+            <div class="content">
+                <h3>XML</h3>
+                <p>eXtensible Markup Language – расширяемый язык разметки, основанный на тегах и четкой структуре.</p>
+                <h3>HTML</h3>
+                <p>Hyper Text Markup Language – язык гипертекстовой разметки, это стандартизированный формат разметки документов в интернете. Именно интерпритацией HTML и занимаются браузеры. HTML как и другие XML-подобные языки разметки представляет собой набор данных обернутых в теги.</p>
+                <h3>HTTP</h3>
+                <p>Hyper Text Transfer Protocol – протокол передачи гипертекста, то есть просто набор правил отправки и получения гипертекстового трафика.  Протокол HTTP представляет собой общение между хостами в формате «запрос-ответ» или «request-reqsponse». Например, я с компьютера отправляю запрос на сервер Google, а он отправляет мне свой ответ.</p>
+                <table>
+                	<tr>
+                		<td>Request</td>
+                		<td>
+                			Response
+                		</td>
+                	</tr>
+                	<tr>
+                		<td>
+                			GET /index.php HTTP/1.1<br>
+							Host: example.com<br>
+							User-Agent: Mozilla/5.0 (X11; Linux i686;)<br>
+							Accept: text/html<br>
+							Connection: close
+                		</td>
+                		<td>
+                			HTTP/1.0 200 OK<br>
+							Server: nginx/0.6.31<br>
+							Content-Language: ru<br>
+							Content-Type: text/html; charset=utf-8<br>
+							Content-Length: 1234<br>
+							&lt;!doctype html&gt;<br>
+							… остаток документа
+                		</td>
+                	</tr>
+                </table>
+                <p>Каждое HTTP-сообщение состоит из трех частей: стартовая строка, заголовки и тело. При этом обязательной является только стартовая строка.  Стартовые строки для запроса и ответа имеют различный формат.</p>
+                <p><b>Стартовая строка:</b><br>
+                В стартовой строке запроса указывается <b>METHOD URI HTTP/VERSION</b> где<br>
+					METHOD — это как раз метод HTTP-запроса,<br>
+					URI — идентификатор ресурса,<br>
+					VERSION — версия протокола (на данный момент актуальна версия 1.1, как и последние 15 лет).<br></p>
+				<p>В стартовой строке ответа указывается <b>HTTP/VERSION Status Code Reasone Phrase</b> где<br>
+					VERSION — версия протокола,<br>
+					Status Code – код состояния,<br>
+					Reasone Phrase – пояснение.<br></p>
+				<p><b>Заголовки:</b></p>
+				<p>Это набор пар ключ:значение, в которых передается служебная информация такая как кодировка, название и версия браузера, и тд</p>
+				<p><b>Тело сообщения:</b></p>
+				<p>Это передаваемые данные, как правило html-страница.</p>
+				<h3>Request methods</h3>
+				<p>Тип HTTP-запроса (также называемый HTTP-метод), указывает серверу какое действие мы хотим провести с ресурсом, указаннам в URI. В начале 90-х существовал только один метод – метод GET для получения информации, но после придумал и другие.</p>
+				<table>
+					<tr>
+						<td>GET</td>
+						<td>Получение ресурса</td>
+					</tr>
+					<tr>
+						<td>POST</td>
+						<td>Создание ресурса</td>
+					</tr>
+					<tr>
+						<td>PUT</td>
+						<td>Обновление ресурса</td>
+					</tr>
+					<tr>
+						<td>DELETE</td>
+						<td>Удаление ресурса</td>
+					</tr>
+				</table>
+				<h3>Response codes</h3>
+				<table>
+					<tr>
+						<td>200</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td>301</td>
+						<td>Moved Permanently</td>
+					</tr>
+					<tr>
+						<td>302</td>
+						<td>Found</td>
+					</tr>
+					<tr>
+						<td>401</td>
+						<td>Unauthorized</td>
+					</tr>
+					<tr>
+						<td>403</td>
+						<td>Forbidden</td>
+					</tr>
+					<tr>
+						<td>404</td>
+						<td>Not Found</td>
+					</tr>
+					<tr>
+						<td>500</td>
+						<td>Internal Server Error</td>
+					</tr>
+				</table>
+				<h3>URI и URL</h3>
+				<p>Uniform Resource Indentifier – единообразный идентификатор ресурса, то есть просто символьная строка позволяеющая уникально идентифицировать какой то ресурс. Ресурс это как правило файл на сервере, например ‘styles.css’. URL (Uniform Resource Locator) – это URI, который, помимо идентификации ресурса, предоставляет ещё и информацию о местонахождении этого ресурса.</p>
+				<h3>Разбор URL-адреса</h3>
+				<p>Типичная структура URL</p>
+				<img src="img/url.png" alt="url">
+				<p>Передача данных отображается в адресной строке браузера. Это нам не всегда нужно. Потому что иногда мы хотим передать например пароль. Для этого и придумали HTTPS протокол.</p>
+				<h3>HTTPS</h3>
+				<p>Hyper Text Transfer Protocol Secure – это HTTP протокол использующий шифрование. Очень полезен для передачи приватных данных.</p>
+				<h3>Cookie</h3>
+				<p>Cookie – это небольшие кусочки информации, которые сервер отправляет клиенту, чтобы тот хранил их у себя, и при следующих запросах отдавал обратно серверу. Например, пользователь авторизовался на главное странице сайте, тогда сервер создаст объект сессии на этом сервере для этого пользователя, а уникальный номер для этой сессии передает клиенту в виде Cookie. При следующем запросе от клиента к серверу, этот номер сессии вместе с другими Cookie будет отправлен на сервер. Так сервер узнает пользователя.</p>
+				<h3>JSON</h3>
+				<p>JavaScript Object Notation – текстовый формат передачи данных основанный на JavaScript, котоырй передает объект в формате ключи-значение, значениями могут быть другие объекты, массивы, или просто значения.</p>
+            </div>
+        </div>
+
+        <footer></footer>
+
+        <script src="js/pushy.min.js"></script>
+    </body>
+</html>
