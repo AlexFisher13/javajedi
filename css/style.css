@@ -41,6 +41,10 @@ a {
   outline: none;
   color: white;
 }
+.textlink {
+  color: blue;
+  text-decoration: underline;
+}
 mark {
   background-color: rgba(255,229,100,0.2);
 }
