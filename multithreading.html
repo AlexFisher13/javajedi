@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>JavaJedi</title>
+        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <!-- Pushy CSS -->
+        <link rel="stylesheet" href="css/pushy.css">
+        <!-- My styles -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <header><h1>JavaJedi</h1></header>
+
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-left" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+                    <li class="pushy-submenu">
+                        <button>Java</button>
+                        <ul>
+                            <li class="pushy-link"><a href="java.html">Java</a></li>
+                            <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
+                            <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
+                            <li class="pushy-link"><a href="java8.html">Java 8</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Web</button>
+                        <ul>
+                            <li class="pushy-link"><a href="internet.html">Internet</a></li>
+                            <li class="pushy-link"><a href="http.html">HTTP</a></li>
+                            <li class="pushy-link"><a href="webservices.html">Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Базы данных</button>
+                        <ul>
+                            <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
+                            <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
+                            <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Автоматизация</button>
+                        <ul>
+                            <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
+                            <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
+                            <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Паттерны</button>
+                        <ul>
+                            <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
+                            <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
+                            <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
+                            <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
+                            <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Spring</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Spring Context</a></li>
+                            <li class="pushy-link"><a href="#">Spring Boot</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Сборка</button>
+                        <ul>
+                            <li class="pushy-link"><a href="maven.html">Maven</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Методологии разработки</button>
+                        <ul>
+                            <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Контроль версий</button>
+                        <ul>
+                            <li class="pushy-link"><a href="git.html">Git</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div id="container">
+            <!-- Menu Button -->
+            <button class="menu-btn">&#9776; Menu</button>
+            <div class="content">
+                <h2>Многопоточность</h2>
+               	<p>Наиболее очевидная область применения многопоточности это пользовательские интерфейсы и игры, где интерфейс должен продолжать отзываться на действия пользователя, во время обработки информации.<br>Совокупность последовательный инструкций выполняемых процессоров называется поток. Если процессор многоядерный то каждое ядро выполняет свой поток. Если потоков больше чем ядер, то ядро начинает выполнять нескоько потоков, перключаясь между ними, и выполняя по несколько инструкций. Несколько инструкций одного потока, потом несоклько инструкций другого и так далее.<br>В java программе запускается один поток при запуске метода <b>main</b>. Чтобы создать еще один поток который будет работать паралельно нам нужно создать объект класса <b>Thread</b>.  Этот класс инкапсулирает стандартные механизмы работы с потоками.</p>
+                <h3>Запуск нового потока</h3>
+                <p>Запустить новый поток можно двумя способами:</p>
+                <ul class="decimal">
+                    <li>Создать класс, реализующий интерфейс <code>Runnable</code>, и реализовать метод <code>run()</code> для запуска новго потока. (run – это аналог main, но только для побочного потока).</li>
+                    <li>Создать класс, наследний от класса <code>Thread</code>, и переопределить метод <code>run()</code>.</li>
+                </ul>
+                <p>Посе создания экземпляра класса, запустить у него метод <code>start()</code>, который запустит поток.</p>
+                <h3>Завершение потоков и демоны</h3>
+                <p>В Java процесс завершается тогда, когда завершается последний его поток. Даже если метод main() уже завершился, но еще выполняются порожденные им потоки, система будет ждать их завершения.<br>Однако это правило не относится к особому виду потоков – демонам. Потоки-демоны используются для выполнения фоновых задач, обслуживающих процесс в течение его жизни. Если завершился последний обычный поток процесса, и остались только потоки-демоны, то они будут принудительно завершены и выполнение процесса закончится.<br>Объявить поток демоном достаточно просто — нужно перед запуском потока вызвать его метод <code>setDaemon(true)</code>. Проверить, является ли поток демоном, можно вызвав его метод <code>boolean isDaemon()</code></p>
+                <h3>Прерывание потоков</h3>
+                <p>В Java существуют (существовали) средства для принудительного завершения потока. В частности метод <code>Thread.stop()</code> завершает поток незамедлительно после своего выполнения.<br>Вместо принудительного завершения потока применяется схема, в которой каждый поток сам ответственен за своё завершение. Java имеет встроенный механизм оповещения потока, который называется Interruption (прерывание, вмешательство).</p>
+                <p><b>Метод interrupt</b><br>
+                Класс Thread содержит в себе скрытое булево поле, которое называется флагом прерывания. Установить этот флаг можно вызвав метод interrupt() потока. Проверить же, установлен ли этот флаг, можно двумя способами. Первый способ — вызвать метод bool isInterrupted() объекта потока, второй — вызвать статический метод bool Thread.interrupted().<br>У методов, приостанавливающих выполнение потока, таких как sleep(), wait() и join() есть одна особенность — если во время их выполнения будет вызван метод interrupt() этого потока, они, не дожидаясь конца времени ожидания, сгенерируют исключение InterruptedException.</p>
+                <p><b>Метод sleep</b><br>
+                Thread.sleep() — статический метод класса Thread, который приостанавливает выполнение потока, в котором он был вызван. Во время выполнения метода sleep() система перестает выделять потоку процессорное время, распределяя его между другими потоками. Метод sleep() может выполняться либо заданное кол-во времени (миллисекунды или наносекунды) либо до тех пор пока он не будет остановлен прерыванием (в этом случае он сгенерирует исключение InterruptedException).</p>
+                <p><b>Метод yield</b><br>
+                Статический метод Thread.yield() заставляет процессор переключиться на обработку других потоков системы. Метод может быть полезным, например, когда поток ожидает наступления какого-либо события и необходимо чтобы проверка его наступления происходила как можно чаще. В этом случае можно поместить проверку события и метод Thread.yield() в цикл.</p>
+                <p><b>Метод join</b><br>
+                В Java предусмотрен механизм, позволяющий одному потоку ждать завершения выполнения другого. Для этого используется метод join(). Например, чтобы главный поток подождал завершения побочного потока myThready, необходимо выполнить инструкцию myThready.join() в главном потоке. Как только поток myThready завершится, метод join() вернет управление, и главный поток сможет продолжить выполнение.</p>
+                
+                <h3>Мьютекс  и synchronized</h3>
+                <p>Мьютекс - это специально поле в объекте, которое неявно наследуются от класса Object. Мьютекс может возвращать либо true либо false, что означает занят объект или свободен, то есть его использует какой то поток или нет.<br>Synchronized - это ключевое слово, которое позволяет заблокировать доступ к методу или блоку кода, если его уже использует другой поток. Когда один поток заходит  внутрь блока кода помеченного synchronized то Java-машина блокирует мьютекс у объекта, и больше не один поток не сможет зайти внутрь метода, пока текущий поток не покинет его.</p>
+                <h3>volatile</h3>
+                <p>volatile (изменчивость) – ключевое слово, указав которые перед объявлением переменной запрещает помещать его значение к КЭШ. Значение будет записываться на диск в медленную память. Что обеспечит упорядоченный многопоточный доступ к этой переменной.</p>
+            </div>
+        </div>
+
+        <footer></footer>
+
+        <script src="js/pushy.min.js"></script>
+    </body>
+</html>

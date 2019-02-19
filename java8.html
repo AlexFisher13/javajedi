@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>JavaJedi</title>
+        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <!-- Pushy CSS -->
+        <link rel="stylesheet" href="css/pushy.css">
+        <!-- My styles -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <header><h1>JavaJedi</h1></header>
+
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-left" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+                    <li class="pushy-submenu">
+                        <button>Java</button>
+                        <ul>
+                            <li class="pushy-link"><a href="java.html">Java</a></li>
+                            <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
+                            <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
+                            <li class="pushy-link"><a href="java8.html">Java 8</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Web</button>
+                        <ul>
+                            <li class="pushy-link"><a href="internet.html">Internet</a></li>
+                            <li class="pushy-link"><a href="http.html">HTTP</a></li>
+                            <li class="pushy-link"><a href="webservices.html">Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Базы данных</button>
+                        <ul>
+                            <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
+                            <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
+                            <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Автоматизация</button>
+                        <ul>
+                            <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
+                            <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
+                            <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Паттерны</button>
+                        <ul>
+                            <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
+                            <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
+                            <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
+                            <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
+                            <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Spring</button>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Spring Context</a></li>
+                            <li class="pushy-link"><a href="#">Spring Boot</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Сборка</button>
+                        <ul>
+                            <li class="pushy-link"><a href="maven.html">Maven</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Методологии разработки</button>
+                        <ul>
+                            <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Контроль версий</button>
+                        <ul>
+                            <li class="pushy-link"><a href="git.html">Git</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div id="container">
+            <!-- Menu Button -->
+            <button class="menu-btn">&#9776; Menu</button>
+            <div class="content">
+                <h2>Java 8</h2>
+               	<h3>Функционалльность и Декларативность</h3>
+                <p>Декларативность - описание необходимого результата сразу на месте.</p>
+                <p>Java 8 привнесла в язык функциональный подход, реализованный по типу как это реализовано в функциональных языках, например JS. Фукнциональный подход заключается в том что наконец-то, несомтря на парадигму ООП, в java стало возможным рассматривать функции в отрыве от классов. Стало вомзможным передавать ссылки на функции и использовать колбэки. Ссылка на функцию содержит адрес не блока памяти со значением, а ссылку на сам код функции.</p>
+                <h3>Анонимные классы и Лямбды</h3>
+                <p>Лямбда-выражения – это новый способ сделать то же самое, что мы всегда могли сделать, но в более чистом и менее многословном новом способе использования анонимных внутренних классов.<br>Чтобы понять зачем нужны лямбда выражения нужно знать зачем нужны анонимные классы Анонимный класс - это класс без имени, который нужен для того чтобы на ходу создать экземпляр интерфейса с реализацией его методов.<br>Например, в конструктор в метод в качестве аргумента принимает значения типа Интерфейс. Мы на ходу пишем new ИмяИнтерфейса, и реализацию его метода. То есть мы создали экземпляр класса, реализующего интерфейс, и передали его в качестве аргумента.<br>Интерфейсы которые имеют только один метод в называются функциональные интерфейсы.<br>Так вот всю данную конструкцию можно заменить на лямбда выражение. Просто потому что компилятор поймет какой интерфейс мы будем реализовывать, потому что он ждет его в качестве аргумента, поэтому нам не нужно его указывать. Так как инфтерфейс функциональный, а значит имеет один метод, название метода тоже можем опустить. Типы параметров этого метода тоже изместы, значит тоже опускаем. Если метод что-то возвращает то слово return тоже можно опустить. Лямбда-выражения могут использоваться только в том случае, если вам нужно переопределить не более одного метода.</p>
+                <img src="img/lambda.png" alt="lambda">
+                <h3>Стримы и лямбды</h3>
+                <p>Stream - новый класс который появился в java 8, у него есть набор методов который в качестве параметров принимает функциональные интерфейсы, то есть на их место мы можем подсунуть лямбда выражения, то есть функции которые будут выполняться для каждого элемента коллекции.</p>
+                <img src="img/stream.png" alt="stream">
+                <h3>Произвольное количество аргументов.</h3>
+                <p>Произвольное количество аргументов. В данном случаем мы можем передавать в метод любое количество аргументов. В результате чего аргумент всегда будет являться массивом элементов даже если он всего один. Произвольный аргумент должен быть последним в сигнатуре метода.</p>
+                <img src="img/spread.png" alt="spread">
+                <h3>SimpleDateFormat и Calendar</h3>
+                <p>В Java имеется удобный класс SimpleDateFormat, который можно использовать для форматирования даты. Мы задаем  формат даты, например через точки или слеши, или с минутами, а потом в качестве аргумента передаем объект типа Date.</p>
+                <img src="img/simpleformat.png" alt="simpleformat">
+                <p>Класс Date давно устарел, вместо него удобнее использовать Calendar. В нем реализованы календари различных наций, стран и вероисповеданий. Его очень удобно использовать с SimpleDateDormat.</p>
+                <img src="img/calendar.png" alt="calendar">
+            </div>
+        </div>
+
+        <footer></footer>
+
+        <script src="js/pushy.min.js"></script>
+    </body>
+</html>
