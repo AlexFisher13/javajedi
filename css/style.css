@@ -39,7 +39,7 @@ li {
 a {
   text-decoration: none;
   outline: none;
-  color: white;
+  /*color: white;*/
 }
 .textlink {
   color: blue;

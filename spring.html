@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>JavaJedi</title>
+        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <!-- Pushy CSS -->
+        <link rel="stylesheet" href="css/pushy.css">
+        <!-- My styles -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <header><h1>JavaJedi</h1></header>
+
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-left" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+                    <li class="pushy-submenu">
+                        <button>Java</button>
+                        <ul>
+                            <li class="pushy-link"><a href="java.html">Java</a></li>
+                            <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
+                            <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
+                            <li class="pushy-link"><a href="java8.html">Java 8</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Web</button>
+                        <ul>
+                            <li class="pushy-link"><a href="internet.html">Internet</a></li>
+                            <li class="pushy-link"><a href="http.html">HTTP</a></li>
+                            <li class="pushy-link"><a href="webservices.html">Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Базы данных</button>
+                        <ul>
+                            <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
+                            <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
+                            <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Автоматизация</button>
+                        <ul>
+                            <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
+                            <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
+                            <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Паттерны</button>
+                        <ul>
+                            <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
+                            <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
+                            <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
+                            <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
+                            <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Spring</button>
+                        <ul>
+                            <li class="pushy-link"><a href="spring.html">Spring</a></li>
+                            <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Сборка</button>
+                        <ul>
+                            <li class="pushy-link"><a href="maven.html">Maven</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Методологии разработки</button>
+                        <ul>
+                            <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button>Контроль версий</button>
+                        <ul>
+                            <li class="pushy-link"><a href="git.html">Git</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div id="container">
+            <!-- Menu Button -->
+            <button class="menu-btn">&#9776; Menu</button>
+            <div class="content">
+                <h2>Spring</h2>
+                <p>Spring – это универсальный java-фреймоврк, обеспечивающий решение многих задач, а именно работы с БД, работы с сервисами,  и тд.</p>
+               	<h3>Проблема</h3>
+                <p>Чем больше приложение – тем сложнее его поддерживать, тестировать, изменять, добавлять новую функциональность. Плюс огромное количество кода. Многие объект создают внутри себя другие объекты через new, что дает сильную связанность между объектами, и невозможность без переписки кода и перекомпиляции, подсунуть другую реализацию объекта, или мок, или просто изменить объект.</p>
+                <h3>Решение: Dependency Injection</h3>
+                <p>Чтобы решить эту проблему нам нужно обеспечить слабую связанность между объектами, то есть чтобы классы не создавали объекты внутри себя, а просто получали их откуда то. В таком случае куски программы не будут зависеть друг от друга, и любой момент один из кусков можно будет заменить на похожий, или протестировать каждый кусок в изоляции от других. Такой побход называется Inversion of Control, или Dependecy Injection. Это и стало основной фишкой Spring.</p>
+                <h3>Spring Beans</h3>
+                <p>Бины – это основные элементы Spring. Это классы, которые являются точками входа в наше приложение. Создаются они спрингом согласно конфигурации Dependency Injection.</p>
+                <h3>Spring Container</h3>
+                <p>У Спринга есть контейнер, в котором мы хранятся бины. Спринг хранит их хранит в виде графа объектов. И когда нам в каком то классе нужно создать объект, мы не сами его создаемб а просим у спринга нам его дать. Контейнер сам создает бины и управляем их жизненным циклом.</p>
+                <h3>Spring Context</h3>
+                <p>Чтобы Спринг понимал какие бины нам давать и как ими управлять, мы должны создать контекст в котором опишем все нужные нам бины. Контекст можно описывать в XML-файле или в JAVA-классе или с помощью аннотаций.</p>
+                <h3>Типы контейнеров</h3>
+                <ul>
+                    <li>BeanFactory – простой контейнер, который умеет только создавать бины и инжектить куда на до и все.</li>
+                    <li>ApplicationContext – тоже самое что и БинФэктори + сервисы по управлению бинами.</li>
+                </ul>
+                <p>В main мы должны создать такой контейнер и передать ему в параметры контекст наших бинов в видео XML или JAVA-класса. Можно передавать несоклько xml, он из них сделает для себя одну общую.</p>
+                <h3>Bean Scope</h3>
+                <p>Bean Scope (цикл жизни бинов) -  по умолчанию singleton, то есть контейнер нам будет отдавать постоянно один и тот же бин который создал. Scope proptotype позволяет постояно позволяет получать новый объект. Есть еще 3 скоупа: request – котоырй живет на время запроса, session и global-session – живут во время сессии.</p>
+                <h3>Аннотации</h3>
+                <p>Для того чтобы конфигурировать контест не с помощью xml а с помощью аннотаций, мы должны в xml указать &lt;annotation-config&gt;.<br>Для того чтобы внедрить бин зависимость для бина нам нужно указать @Autowired, чтобы указть какое именно нам нужен бин то нужно писать @Qualifire,  а чтобы укзаать занчения то @Value, для указания споупа @Skope<br>Все аннотации бинов равнозначными для спринга, а именно @Component, @Service, @Repository, @Controller.<br>Контест бинов в JAVA-класса должен быть помечен аннотацией @Configuration</p>
+                <h3>Spring Boot</h3>
+                <p>Spring Boot позволяет быстро и легко настаивать Spring приложения, имеет встроенный веб-сервер (Tomcat или Jetty), имеет конфигурацию на аннотациях (без xml-файлов).</p>
+            </div>
+        </div>
+
+        <footer></footer>
+
+        <script src="js/pushy.min.js"></script>
+    </body>
+</html>
