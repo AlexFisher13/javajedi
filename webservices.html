@@ -1,146 +1,179 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>JavaJedi</title>
-        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/demo.css">
-        <!-- Pushy CSS -->
-        <link rel="stylesheet" href="css/pushy.css">
-        <!-- My styles -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
 
-        <header><a href="index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+<header><a href="index.html"><h1 id="jedi">JavaJedi</h1></a></header>
 
-        <!-- Pushy Menu -->
-        <nav class="pushy pushy-left" data-focus="#first-link">
-            <div class="pushy-content">
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left" data-focus="#first-link">
+    <div class="pushy-content">
+        <ul>
+            <li class="pushy-submenu">
+                <button>Java</button>
                 <ul>
-                    <li class="pushy-submenu">
-                        <button>Java</button>
-                        <ul>
-                            <li class="pushy-link"><a href="java.html">Java</a></li>
-                            <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
-                            <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
-                            <li class="pushy-link"><a href="java8.html">Java 8</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Web</button>
-                        <ul>
-                            <li class="pushy-link"><a href="internet.html">Internet</a></li>
-                            <li class="pushy-link"><a href="http.html">HTTP</a></li>
-                            <li class="pushy-link"><a href="webservices.html">Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Базы данных</button>
-                        <ul>
-                            <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
-                            <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
-                            <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Автоматизация</button>
-                        <ul>
-                            <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
-                            <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
-                            <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Паттерны</button>
-                        <ul>
-                            <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
-                            <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
-                            <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
-                            <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
-                            <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Spring</button>
-                        <ul>
-                            <li class="pushy-link"><a href="spring.html">Spring</a></li>
-                            <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Сборка</button>
-                        <ul>
-                            <li class="pushy-link"><a href="maven.html">Maven</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Методологии разработки</button>
-                        <ul>
-                            <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Контроль версий</button>
-                        <ul>
-                            <li class="pushy-link"><a href="git.html">Git</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+                    <li class="pushy-link"><a href="java.html">Java</a></li>
+                    <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
+                    <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
+                    <li class="pushy-link"><a href="java8.html">Java 8</a></li>
                 </ul>
-            </div>
-        </nav>
-
-        <!-- Content -->
-        <div id="container">
-            <!-- Menu Button -->
-            <button class="menu-btn">&#9776; Menu</button>
-            <div class="content">
-                <h2>Веб-сервисы</h2>
-               	<p><b>Веб-сервис</b> - это система обмена даннными между программами или ее распределенными компонентами, идентифицируемая уникальным веб-адресом URL (Uniform Resource Locator).</p>
-				<p>Веб-сервис работает в формате request-response (запрос-ответ), то есть мы отправляем запрос веб-сервису и получаем от него ответ</p>
-				<img src="img/webservices.png" alt="webservices">
-               	<p>Место где лежит наш веб-сервис называется <b>сервером</b>, также его называют <b>endpoint</b> (конечная точка, куда идут сообщения от клиента).</p>
-               	<p>Для создания веб-сервисов существует 2 архитектуры SOA и REST</p>
-               	<h3>SOA</h3>
-               	<p><b>SOA (Service Oriented Architecture)</b> - архитектура ориентированная на вызов и исполнение удаленных методов. SOA имеющая ряд стандартов и спецификаций, а также протокол передачи данных – SOAP.</p>
-               	<p><b>SOAP</b> - протокол для обмена данными между веб-сервисами на базе XML. Прежде чем вызвать веб-сервис, нужно этот вызов описать в XML файле формата SOAP, потом это упаковывется у в HTTP пакет и посылается на другой компьютер в сети по TCP/IP.</p>
-               	<p><b>WSDL</b> – это XML файл описания веб-сервиса.</p>
-                <h3>REST</h3>
-                <p><b>REST</b> — архитектурный стиль постоения веб сервисах в котором сделан акцент на доступ к ресурсам, а не на исполенение удаленных сервисов как в SOAP сервисах.</p>
-                <p>Основной концепцией REST является - отсутствие состояния. Согласно REST, сервис не хранит результаты предыдущей операции. То есть работаем по принципу «спросил-ответил-забыл». сервер не должен хранить вообще никакой информации о клиенте – никакой сессии.</p>
-                <p>С точки зрения пользователя, RESTful сервисы — это ресурсы сети, которыми может быть всё, что можно поименовать и представить.  В интеренете все является ресурсами с уникальным индетификатором (URL).</p>
-                <p>Взаимодействие с ресурсами осуществляется с помощью вызова URL ресурса и стандартных CRUD команд HTTP (GET, POST, PUT и DELETE). Формат данных, передаваемых между клиентом и сервисом указывается с помощью заголовка HTTP — параметр типа содержимого Content-Type. Обычно это JSON или XML, но могут быть разнообразными (например, JPG, PNG — для сервиса обработки графики).</p>
-                <h3>REST vs SOAP</h3>
+            </li>
+            <li class="pushy-submenu">
+                <button>Web</button>
                 <ul>
-                	<li>SOAP – это целое семейство протоколов и стандартов, откуда напрямую вытекает, что это более тяжеловесный и сложный вариант с точки зрения машинной обработки. Поэтому REST работает быстрее.</li>
-                	<li>SOAP и REST – не конкуренты. SOAP работает с операциями, а REST – с ресурсами.</li>
-                	<li>REST может быть представлен в различных форматах(XML, JSON), а SOAP привязан к XML.</li>
-                	<li>SOAP используют HTTP как транспортный протокол, в то время как REST базируется на нем. Это означает, что все существующие наработки на базе протокола HTTP, такие как кеширование на уровне сервера, масштабирование, продолжают так же работать в REST архитектуре, а для SOAP необходимо искать другие средства.</li>
+                    <li class="pushy-link"><a href="internet.html">Internet</a></li>
+                    <li class="pushy-link"><a href="http.html">HTTP</a></li>
+                    <li class="pushy-link"><a href="webservices.html">Services</a></li>
                 </ul>
-                <h3>Реализация веб-сервисов в Java: JAVA SERVLETS</h3>
-                <p><b>Java Servlets</b> – это технология реализующая возможности веб-сервиса, то есть она позволяет принимать, обрабатывать сетевые запросы и отправлять ответы. </p>
-                <p>Фактически в java это класс, расширяющий клаcс <b>HttpServlet</b>, и помеченный аннотацией <b>@WebServlet</b>, у которого есть два главных метода:<br>
-                <code>void doGet(HttpServletRequest request, HttpServletResponse response) {}</code><br>
-                <code>void doPost(HttpServletRequest request, HttpServletResponse response) {}</code></p>
-                <p>По сути сервлет связывает ссылку из адресной стокрои и java-класс, которые выполняет какую то логику и возвращает отвтет в виде HTML, JSP, JSON  и др.</p>
-                <h3>Реализация веб-сервиса с помощью Spring Boot</h3>
-                <p>В современной разработке уже никто на прямую не использует HttpServlet, так как Spring Boot предоставляет набор готовых инструментов для реализации сервиса.</p>
-                <p>Пример, Rest-севриса, который работает с запросами по URL <code>http://localhost:8080/api/v1/customers/</code></p>
-                <img src="img/restcontroller.jpg" alt="restcontroller">
-                <h3>Тестирование сервисов</h3>
-                <p>Postman – мощный набор инструментов для тестирования Rest-сервисов. Он может отправлять запросы на какой нибудь Rest-сервис  и получать от него ответы.</p>
-            </div>
-        </div>
+            </li>
+            <li class="pushy-submenu">
+                <button>Базы данных</button>
+                <ul>
+                    <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
+                    <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
+                    <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Автоматизация</button>
+                <ul>
+                    <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
+                    <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
+                    <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Паттерны</button>
+                <ul>
+                    <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
+                    <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
+                    <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
+                    <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
+                    <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Spring</button>
+                <ul>
+                    <li class="pushy-link"><a href="spring.html">Spring</a></li>
+                    <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Сборка</button>
+                <ul>
+                    <li class="pushy-link"><a href="maven.html">Maven</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Методологии разработки</button>
+                <ul>
+                    <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Контроль версий</button>
+                <ul>
+                    <li class="pushy-link"><a href="git.html">Git</a></li>
+                </ul>
+            </li>
+            <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+            <li class="pushy-submenu">
+                <button>DevOps</button>
+                <ul>
+                    <li class="pushy-link"><a href="cicd.html">CI/CD</a></li>
+                    <li class="pushy-link"><a href="containerization.html">Контейнеризация</a></li>
+                    <li class="pushy-link"><a href="devopsother.html">Elastic, Kibana, Heroku</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-        <footer></footer>
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h2>Веб-сервисы</h2>
+        <p><b>Веб-сервис</b> - это система обмена даннными между программами или ее распределенными компонентами,
+            идентифицируемая уникальным веб-адресом URL (Uniform Resource Locator).</p>
+        <p>Веб-сервис работает в формате request-response (запрос-ответ), то есть мы отправляем запрос веб-сервису и
+            получаем от него ответ</p>
+        <img src="img/webservices.png" alt="webservices">
+        <p>Место где лежит наш веб-сервис называется <b>сервером</b>, также его называют <b>endpoint</b> (конечная
+            точка, куда идут сообщения от клиента).</p>
+        <p>Для создания веб-сервисов существует 2 архитектуры SOA и REST</p>
+        <h3>SOA</h3>
+        <p><b>SOA (Service Oriented Architecture)</b> - архитектура ориентированная на вызов и исполнение удаленных
+            методов. SOA имеющая ряд стандартов и спецификаций, а также протокол передачи данных – SOAP.</p>
+        <p><b>SOAP</b> - протокол для обмена данными между веб-сервисами на базе XML. Прежде чем вызвать веб-сервис,
+            нужно этот вызов описать в XML файле формата SOAP, потом это упаковывется у в HTTP пакет и посылается на
+            другой компьютер в сети по TCP/IP.</p>
+        <p><b>WSDL</b> – это XML файл описания веб-сервиса.</p>
+        <h3>REST</h3>
+        <p><b>REST</b> — архитектурный стиль постоения веб сервисах в котором сделан акцент на доступ к ресурсам, а не
+            на исполенение удаленных сервисов как в SOAP сервисах.</p>
+        <p>Основной концепцией REST является - отсутствие состояния. Согласно REST, сервис не хранит результаты
+            предыдущей операции. То есть работаем по принципу «спросил-ответил-забыл». сервер не должен хранить вообще
+            никакой информации о клиенте – никакой сессии.</p>
+        <p>С точки зрения пользователя, RESTful сервисы — это ресурсы сети, которыми может быть всё, что можно
+            поименовать и представить. В интеренете все является ресурсами с уникальным индетификатором (URL).</p>
+        <p>Взаимодействие с ресурсами осуществляется с помощью вызова URL ресурса и стандартных CRUD команд HTTP (GET,
+            POST, PUT и DELETE). Формат данных, передаваемых между клиентом и сервисом указывается с помощью заголовка
+            HTTP — параметр типа содержимого Content-Type. Обычно это JSON или XML, но могут быть разнообразными
+            (например, JPG, PNG — для сервиса обработки графики).</p>
+        <h3>REST vs SOAP</h3>
+        <ul>
+            <li>SOAP – это целое семейство протоколов и стандартов, откуда напрямую вытекает, что это более тяжеловесный
+                и сложный вариант с точки зрения машинной обработки. Поэтому REST работает быстрее.
+            </li>
+            <li>SOAP и REST – не конкуренты. SOAP работает с операциями, а REST – с ресурсами.</li>
+            <li>REST может быть представлен в различных форматах(XML, JSON), а SOAP привязан к XML.</li>
+            <li>SOAP используют HTTP как транспортный протокол, в то время как REST базируется на нем. Это означает, что
+                все существующие наработки на базе протокола HTTP, такие как кеширование на уровне сервера,
+                масштабирование, продолжают так же работать в REST архитектуре, а для SOAP необходимо искать другие
+                средства.
+            </li>
+        </ul>
+        <h3>Реализация веб-сервисов в Java: JAVA SERVLETS</h3>
+        <p><b>Java Servlets</b> – это технология реализующая возможности веб-сервиса, то есть она позволяет принимать,
+            обрабатывать сетевые запросы и отправлять ответы. </p>
+        <p>Фактически в java это класс, расширяющий клаcс <b>HttpServlet</b>, и помеченный аннотацией <b>@WebServlet</b>,
+            у которого есть два главных метода:<br>
+            <code>void doGet(HttpServletRequest request, HttpServletResponse response) {}</code><br>
+            <code>void doPost(HttpServletRequest request, HttpServletResponse response) {}</code></p>
+        <p>По сути сервлет связывает ссылку из адресной стокрои и java-класс, которые выполняет какую то логику и
+            возвращает отвтет в виде HTML, JSP, JSON и др.</p>
+        <h3>Реализация веб-сервиса с помощью Spring Boot</h3>
+        <p>В современной разработке уже никто на прямую не использует HttpServlet, так как Spring Boot предоставляет
+            набор готовых инструментов для реализации сервиса.</p>
+        <p>Пример, Rest-севриса, который работает с запросами по URL
+            <code>http://localhost:8080/api/v1/customers/</code></p>
+        <img src="img/restcontroller.jpg" alt="restcontroller">
+        <h3>Тестирование сервисов</h3>
+        <p>Postman – мощный набор инструментов для тестирования Rest-сервисов. Он может отправлять запросы на какой
+            нибудь Rest-сервис и получать от него ответы.</p>
+    </div>
+</div>
 
-        <script src="js/pushy.min.js"></script>
-    </body>
+<footer></footer>
+
+<script src="js/pushy.min.js"></script>
+</body>
 </html>

@@ -1,170 +1,209 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>JavaJedi</title>
-        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/demo.css">
-        <!-- Pushy CSS -->
-        <link rel="stylesheet" href="css/pushy.css">
-        <!-- My styles -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
 
-        <header><a href="index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+<header><a href="index.html"><h1 id="jedi">JavaJedi</h1></a></header>
 
-        <!-- Pushy Menu -->
-        <nav class="pushy pushy-left" data-focus="#first-link">
-            <div class="pushy-content">
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left" data-focus="#first-link">
+    <div class="pushy-content">
+        <ul>
+            <li class="pushy-submenu">
+                <button>Java</button>
                 <ul>
-                    <li class="pushy-submenu">
-                        <button>Java</button>
-                        <ul>
-                            <li class="pushy-link"><a href="java.html">Java</a></li>
-                            <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
-                            <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
-                            <li class="pushy-link"><a href="java8.html">Java 8</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Web</button>
-                        <ul>
-                            <li class="pushy-link"><a href="internet.html">Internet</a></li>
-                            <li class="pushy-link"><a href="http.html">HTTP</a></li>
-                            <li class="pushy-link"><a href="webservices.html">Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Базы данных</button>
-                        <ul>
-                            <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
-                            <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
-                            <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Автоматизация</button>
-                        <ul>
-                            <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
-                            <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
-                            <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Паттерны</button>
-                        <ul>
-                            <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
-                            <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
-                            <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
-                            <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
-                            <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Spring</button>
-                        <ul>
-                            <li class="pushy-link"><a href="spring.html">Spring</a></li>
-                            <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Сборка</button>
-                        <ul>
-                            <li class="pushy-link"><a href="maven.html">Maven</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Методологии разработки</button>
-                        <ul>
-                            <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Контроль версий</button>
-                        <ul>
-                            <li class="pushy-link"><a href="git.html">Git</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+                    <li class="pushy-link"><a href="java.html">Java</a></li>
+                    <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
+                    <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
+                    <li class="pushy-link"><a href="java8.html">Java 8</a></li>
                 </ul>
-            </div>
-        </nav>
-
-        <!-- Content -->
-        <div id="container">
-            <!-- Menu Button -->
-            <button class="menu-btn">&#9776; Menu</button>
-            <div class="content">
-                <h3>Selenium</h3>
-                <p>Selenium - это набор инструментов, предназначенных для автоматизации веб браузеров на различных платформах. Selenium Webdriver может автоматизировать множество разнообразных браузеров на разных платформах, используя различные языки программирования и интегрируясь с разными тестовыми фреймворками.</p>
-                <h3>Selenium Webdriver</h3>
-                <p>Selenium Webdriver - инструмент для автоматизации реального браузера, как локально, так и удалённо, наиболее близко имитирующий действия пользователя. Он напрямую вызывает команды браузера, используя родной для каждого конкретного браузера API. Как совершаются эти вызовы и какие функции они выполняют зависит от конкретного браузера.</p>
-                <p>Для работы с Webdriver необходимо 3 основных программных компонента:</p>
-                <ul class="decimal">
-                    <li>Браузер, работу которого пользователь хочет автоматизировать.</li>
-                    <li>Для управления браузером совершенно необходим driver браузера. Driver на самом деле является веб-сервером, который запускает браузер и отправляет ему команды, а также закрывает его. У каждого браузера свой driver. Связано это с тем, что у каждого браузера свои отличные команды управления и реализованы они по-своему.</li>
-                    <li>Скрипт/тест, который содержит набор команд на определённом языке программирования для драйвера браузера.</li>
-                </ul>
-                <h3>Основные понятия и методы Selenium Webdriver API</h3>
+            </li>
+            <li class="pushy-submenu">
+                <button>Web</button>
                 <ul>
-                    <li>Webdriver - самая важная сущность, ответственная за управление браузером.</li>
-                    <li>Webelement - вторая важная сущность, представляющая собой абстракцию над веб-элементом (кнопки, ссылки, поля ввода и др.). Webelement инкапсулирует методы для взаимодействия пользователя с элементами и получения их текущего статуса.</li>
-                    <li>By - абстракция над локатором веб-элемента. Этот класс инкапсулирует информацию о селекторе(например, CSS), а также сам локатор элемента, то есть всю информацию, необходимую для нахождения нужного элемента на странице.</li>
-                    <li>Локатор - уникально идентифицарующий адрес элемета на странице.</li>
+                    <li class="pushy-link"><a href="internet.html">Internet</a></li>
+                    <li class="pushy-link"><a href="http.html">HTTP</a></li>
+                    <li class="pushy-link"><a href="webservices.html">Services</a></li>
                 </ul>
-                <h3>Процесс взаимодействия с браузером через Webdriver API довольно прост:</h3>
-                <ul class="decimal">
-                    <li>Нужно создать Webdriver:<br><code>WebDriver driver = new ChromeDriver();</code></li>
-                    <li>Необходимо открыть тестируемое приложение перейдя по URL:<br><code>driver.get("http://mycompany.site.com");</code></li>
-                    <li>Далее следует серия действий по нахождению элементов на странице и взаимодействию с ними:<br><code>By elementLocator = By.id("#element_id");<br>WebElement element = driver.findElement(elementLocator));</code></li>
-                    <li>В конце теста должна быть какая-то проверка, которая и определит в конечном счёте результат выполнения теста:<br><code>assertEquals("Webpage expected title", driver.getTitle());</code></li>
-                    <li>После теста надо закрыть браузер:<br><code>driver.quit();</code></li>
-                </ul>
-                <h3>Типы локаторов</h3>
-                <p>Поскольку Webdriver - это инструмент для автоматизации веб приложений, то большая часть работы с ним это работа с веб элементами(WebElements). WebElements - ни что иное, как DOM объекты, находящиеся на веб странице. А для того, чтобы осуществлять какие-то действия над DOM объектами / веб елементами необходимо их точным образом определить(найти).<br><code>WebElement element = driver.findElement(By.<Selector>);</code></p>
-                <ul class="decimal">
-                    <li>By.id</li>
-                    <li>By.name</li>
-                    <li>By.className</li>
-                    <li>By.TagName</li>
-                    <li>By.LinkText</li>
-                    <li>By.PartialLinkText</li>
-                    <li>By.cssSelect</li>
-                    <li>By.XPath</li>
-                </ul>
-                <p>Подробнее о локаторах, а именно о XPath и CSS-локаторах <a class="textlink" href="selectors.html">тут</a>.</p>
-                <h3>WebDriver API. Сложные взаимодействия.</h3>
-                <p>Selenium WebDriver позволяет имитировать действия пользователя, начиная от простых движений мыши до сложных, перетягивание объекта. Все это позволяет реализовать класс Actions.</p>
+            </li>
+            <li class="pushy-submenu">
+                <button>Базы данных</button>
                 <ul>
-                    <li>Клик левой кнопкой мыши</li>
-                    <li>Двойной клик на элементе</li>
-                    <li>Клик с удержанием</li>
-                    <li>Правый клик</li>
-                    <li>Перетягивание объекта</li>
-                    <li>Смещение мыши</li>
-                    <li>Перемещение мыши на элемент</li>
-                    <li>Отпускание клавиши мыши</li>
-                    <li>Набор текста на клавиатуре</li>
+                    <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
+                    <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
+                    <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
                 </ul>
-                <h3>Page object</h3>
-                <p>Page Object - один из наиболее полезных и используемых архитектурных решений в автоматизации. Данный шаблон проектирования помогает инкапсулировать работу с отдельными элементами страницы, что позволяет уменьшить количество кода и упростить его поддержку. Если, к примеру, дизайн одной из страниц изменён, то нам нужно будет переписать только соответствующий класс, описывающий эту страницу.</p>
-                <p>Основные преимущества:</p>
+            </li>
+            <li class="pushy-submenu">
+                <button>Автоматизация</button>
                 <ul>
-                    <li>Разделение кода тестов и описания страниц</li>
-                    <li>Объединение всех действий по работе с веб-странией в одном месте</li>
+                    <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
+                    <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
+                    <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
                 </ul>
-            </div>
-        </div>
+            </li>
+            <li class="pushy-submenu">
+                <button>Паттерны</button>
+                <ul>
+                    <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
+                    <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
+                    <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
+                    <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
+                    <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Spring</button>
+                <ul>
+                    <li class="pushy-link"><a href="spring.html">Spring</a></li>
+                    <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Сборка</button>
+                <ul>
+                    <li class="pushy-link"><a href="maven.html">Maven</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Методологии разработки</button>
+                <ul>
+                    <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Контроль версий</button>
+                <ul>
+                    <li class="pushy-link"><a href="git.html">Git</a></li>
+                </ul>
+            </li>
+            <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+            <li class="pushy-submenu">
+                <button>DevOps</button>
+                <ul>
+                    <li class="pushy-link"><a href="cicd.html">CI/CD</a></li>
+                    <li class="pushy-link"><a href="containerization.html">Контейнеризация</a></li>
+                    <li class="pushy-link"><a href="devopsother.html">Elastic, Kibana, Heroku</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-        <footer></footer>
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h3>Selenium</h3>
+        <p>Selenium - это набор инструментов, предназначенных для автоматизации веб браузеров на различных платформах.
+            Selenium Webdriver может автоматизировать множество разнообразных браузеров на разных платформах, используя
+            различные языки программирования и интегрируясь с разными тестовыми фреймворками.</p>
+        <h3>Selenium Webdriver</h3>
+        <p>Selenium Webdriver - инструмент для автоматизации реального браузера, как локально, так и удалённо, наиболее
+            близко имитирующий действия пользователя. Он напрямую вызывает команды браузера, используя родной для
+            каждого конкретного браузера API. Как совершаются эти вызовы и какие функции они выполняют зависит от
+            конкретного браузера.</p>
+        <p>Для работы с Webdriver необходимо 3 основных программных компонента:</p>
+        <ul class="decimal">
+            <li>Браузер, работу которого пользователь хочет автоматизировать.</li>
+            <li>Для управления браузером совершенно необходим driver браузера. Driver на самом деле является
+                веб-сервером, который запускает браузер и отправляет ему команды, а также закрывает его. У каждого
+                браузера свой driver. Связано это с тем, что у каждого браузера свои отличные команды управления и
+                реализованы они по-своему.
+            </li>
+            <li>Скрипт/тест, который содержит набор команд на определённом языке программирования для драйвера
+                браузера.
+            </li>
+        </ul>
+        <h3>Основные понятия и методы Selenium Webdriver API</h3>
+        <ul>
+            <li>Webdriver - самая важная сущность, ответственная за управление браузером.</li>
+            <li>Webelement - вторая важная сущность, представляющая собой абстракцию над веб-элементом (кнопки, ссылки,
+                поля ввода и др.). Webelement инкапсулирует методы для взаимодействия пользователя с элементами и
+                получения их текущего статуса.
+            </li>
+            <li>By - абстракция над локатором веб-элемента. Этот класс инкапсулирует информацию о селекторе(например,
+                CSS), а также сам локатор элемента, то есть всю информацию, необходимую для нахождения нужного элемента
+                на странице.
+            </li>
+            <li>Локатор - уникально идентифицарующий адрес элемета на странице.</li>
+        </ul>
+        <h3>Процесс взаимодействия с браузером через Webdriver API довольно прост:</h3>
+        <ul class="decimal">
+            <li>Нужно создать Webdriver:<br><code>WebDriver driver = new ChromeDriver();</code></li>
+            <li>Необходимо открыть тестируемое приложение перейдя по URL:<br><code>driver.get("http://mycompany.site.com");</code>
+            </li>
+            <li>Далее следует серия действий по нахождению элементов на странице и взаимодействию с ними:<br><code>By
+                elementLocator = By.id("#element_id");<br>WebElement element =
+                driver.findElement(elementLocator));</code></li>
+            <li>В конце теста должна быть какая-то проверка, которая и определит в конечном счёте результат выполнения
+                теста:<br><code>assertEquals("Webpage expected title", driver.getTitle());</code></li>
+            <li>После теста надо закрыть браузер:<br><code>driver.quit();</code></li>
+        </ul>
+        <h3>Типы локаторов</h3>
+        <p>Поскольку Webdriver - это инструмент для автоматизации веб приложений, то большая часть работы с ним это
+            работа с веб элементами(WebElements). WebElements - ни что иное, как DOM объекты, находящиеся на веб
+            странице. А для того, чтобы осуществлять какие-то действия над DOM объектами / веб елементами необходимо их
+            точным образом определить(найти).<br><code>WebElement element = driver.findElement(By.
+                <Selector>);
+            </code></p>
+        <ul class="decimal">
+            <li>By.id</li>
+            <li>By.name</li>
+            <li>By.className</li>
+            <li>By.TagName</li>
+            <li>By.LinkText</li>
+            <li>By.PartialLinkText</li>
+            <li>By.cssSelect</li>
+            <li>By.XPath</li>
+        </ul>
+        <p>Подробнее о локаторах, а именно о XPath и CSS-локаторах <a class="textlink" href="selectors.html">тут</a>.
+        </p>
+        <h3>WebDriver API. Сложные взаимодействия.</h3>
+        <p>Selenium WebDriver позволяет имитировать действия пользователя, начиная от простых движений мыши до сложных,
+            перетягивание объекта. Все это позволяет реализовать класс Actions.</p>
+        <ul>
+            <li>Клик левой кнопкой мыши</li>
+            <li>Двойной клик на элементе</li>
+            <li>Клик с удержанием</li>
+            <li>Правый клик</li>
+            <li>Перетягивание объекта</li>
+            <li>Смещение мыши</li>
+            <li>Перемещение мыши на элемент</li>
+            <li>Отпускание клавиши мыши</li>
+            <li>Набор текста на клавиатуре</li>
+        </ul>
+        <h3>Page object</h3>
+        <p>Page Object - один из наиболее полезных и используемых архитектурных решений в автоматизации. Данный шаблон
+            проектирования помогает инкапсулировать работу с отдельными элементами страницы, что позволяет уменьшить
+            количество кода и упростить его поддержку. Если, к примеру, дизайн одной из страниц изменён, то нам нужно
+            будет переписать только соответствующий класс, описывающий эту страницу.</p>
+        <p>Основные преимущества:</p>
+        <ul>
+            <li>Разделение кода тестов и описания страниц</li>
+            <li>Объединение всех действий по работе с веб-странией в одном месте</li>
+        </ul>
+    </div>
+</div>
 
-        <script src="js/pushy.min.js"></script>
-    </body>
+<footer></footer>
+
+<script src="js/pushy.min.js"></script>
+</body>
 </html>

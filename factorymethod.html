@@ -1,120 +1,148 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>JavaJedi</title>
-        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/demo.css">
-        <!-- Pushy CSS -->
-        <link rel="stylesheet" href="css/pushy.css">
-        <!-- My styles -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
 
-        <header><a href="index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+<header><a href="index.html"><h1 id="jedi">JavaJedi</h1></a></header>
 
-        <!-- Pushy Menu -->
-        <nav class="pushy pushy-left" data-focus="#first-link">
-            <div class="pushy-content">
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left" data-focus="#first-link">
+    <div class="pushy-content">
+        <ul>
+            <li class="pushy-submenu">
+                <button>Java</button>
                 <ul>
-                    <li class="pushy-submenu">
-                        <button>Java</button>
-                        <ul>
-                            <li class="pushy-link"><a href="java.html">Java</a></li>
-                            <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
-                            <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
-                            <li class="pushy-link"><a href="java8.html">Java 8</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Web</button>
-                        <ul>
-                            <li class="pushy-link"><a href="internet.html">Internet</a></li>
-                            <li class="pushy-link"><a href="http.html">HTTP</a></li>
-                            <li class="pushy-link"><a href="webservices.html">Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Базы данных</button>
-                        <ul>
-                            <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
-                            <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
-                            <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Автоматизация</button>
-                        <ul>
-                            <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
-                            <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
-                            <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Паттерны</button>
-                        <ul>
-                            <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
-                            <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
-                            <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
-                            <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
-                            <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Spring</button>
-                        <ul>
-                            <li class="pushy-link"><a href="spring.html">Spring</a></li>
-                            <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Сборка</button>
-                        <ul>
-                            <li class="pushy-link"><a href="maven.html">Maven</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Методологии разработки</button>
-                        <ul>
-                            <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Контроль версий</button>
-                        <ul>
-                            <li class="pushy-link"><a href="git.html">Git</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+                    <li class="pushy-link"><a href="java.html">Java</a></li>
+                    <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
+                    <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
+                    <li class="pushy-link"><a href="java8.html">Java 8</a></li>
                 </ul>
-            </div>
-        </nav>
+            </li>
+            <li class="pushy-submenu">
+                <button>Web</button>
+                <ul>
+                    <li class="pushy-link"><a href="internet.html">Internet</a></li>
+                    <li class="pushy-link"><a href="http.html">HTTP</a></li>
+                    <li class="pushy-link"><a href="webservices.html">Services</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Базы данных</button>
+                <ul>
+                    <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
+                    <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
+                    <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Автоматизация</button>
+                <ul>
+                    <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
+                    <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
+                    <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Паттерны</button>
+                <ul>
+                    <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
+                    <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
+                    <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
+                    <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
+                    <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Spring</button>
+                <ul>
+                    <li class="pushy-link"><a href="spring.html">Spring</a></li>
+                    <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Сборка</button>
+                <ul>
+                    <li class="pushy-link"><a href="maven.html">Maven</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Методологии разработки</button>
+                <ul>
+                    <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Контроль версий</button>
+                <ul>
+                    <li class="pushy-link"><a href="git.html">Git</a></li>
+                </ul>
+            </li>
+            <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+            <li class="pushy-submenu">
+                <button>DevOps</button>
+                <ul>
+                    <li class="pushy-link"><a href="cicd.html">CI/CD</a></li>
+                    <li class="pushy-link"><a href="containerization.html">Контейнеризация</a></li>
+                    <li class="pushy-link"><a href="devopsother.html">Elastic, Kibana, Heroku</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-        <!-- Content -->
-        <div id="container">
-            <!-- Menu Button -->
-            <button class="menu-btn">&#9776; Menu</button>
-            <div class="content">
-               	<h2>Фабричный метод</h2>
-                <img src="img/factory.png" alt="factory">
-                <h3>Суть паттерна</h3>
-                <p>Фабричный метод — это порождающий паттерн проектирования, который определяет общий интерфейс для создания объектов в суперклассе, позволяя подклассам изменять тип создаваемых объектов.</p>
-                <h3>Проблема</h3>
-                <p>Представьте, что вы создаёте программу управления грузовыми перевозками. Сперва вы рассчитываете перевозить товары только на автомобилях. Поэтому весь ваш код работает с объектами класса Грузовик.<br>В какой-то момент ваша программа становится настолько известной, что морские перевозчики выстраиваются в очередь и просят добавить поддержку морской логистики в программу.<br>Отличные новости, правда?! Но как насчёт кода? Большая часть существующего кода жёстко привязана к классам Грузовиков. Чтобы добавить в программу классы морских  Судов, понадобится перелопатить всю программу. Более того, если вы потом решите добавить в программу ещё один вид транспорта, то всю эту работу придётся повторить.<br>В итоге вы получите ужасающий код, наполненный условными операторами, которые выполняют то или иное действие, в зависимости от класса транспорта.</p>
-                <h3>Решение</h3>
-                <p>Паттерн Фабричный метод предлагает создавать объекты не напрямую, используя оператор new, а через вызов особого фабричного метода. Не пугайтесь, объекты всё равно будут создаваться при помощи new, но делать это будет фабричный метод.<br>На первый взгляд, это может показаться бессмысленным: мы просто переместили вызов конструктора из одного конца программы в другой. Но теперь вы сможете переопределить фабричный метод в подклассе, чтобы изменить тип создаваемого продукта.<br>Чтобы эта система заработала, все возвращаемые объекты должны иметь общий интерфейс. Подклассы смогут производить объекты различных классов, следующих одному и тому же интерфейсу.<br>Например, классы Грузовик и Судно реализуют интерфейс Транспорт с методом  доставить. Каждый из этих классов реализует метод по-своему: грузовики везут грузы по земле, а суда — по морю. Фабричный метод в классе ДорожнойЛогистики вернёт объект-грузовик, а класс МорскойЛогистики — объект-судно.<br>Для клиента фабричного метода нет разницы между этими объектами, так как он будет трактовать их как некий абстрактный Транспорт. Для него будет важно, чтобы объект имел метод доставить, а как конкретно он работает — не важно.</p>
-            </div>
-        </div>
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h2>Фабричный метод</h2>
+        <img src="img/factory.png" alt="factory">
+        <h3>Суть паттерна</h3>
+        <p>Фабричный метод — это порождающий паттерн проектирования, который определяет общий интерфейс для создания
+            объектов в суперклассе, позволяя подклассам изменять тип создаваемых объектов.</p>
+        <h3>Проблема</h3>
+        <p>Представьте, что вы создаёте программу управления грузовыми перевозками. Сперва вы рассчитываете перевозить
+            товары только на автомобилях. Поэтому весь ваш код работает с объектами класса Грузовик.<br>В какой-то
+            момент ваша программа становится настолько известной, что морские перевозчики выстраиваются в очередь и
+            просят добавить поддержку морской логистики в программу.<br>Отличные новости, правда?! Но как насчёт кода?
+            Большая часть существующего кода жёстко привязана к классам Грузовиков. Чтобы добавить в программу классы
+            морских Судов, понадобится перелопатить всю программу. Более того, если вы потом решите добавить в программу
+            ещё один вид транспорта, то всю эту работу придётся повторить.<br>В итоге вы получите ужасающий код,
+            наполненный условными операторами, которые выполняют то или иное действие, в зависимости от класса
+            транспорта.</p>
+        <h3>Решение</h3>
+        <p>Паттерн Фабричный метод предлагает создавать объекты не напрямую, используя оператор new, а через вызов
+            особого фабричного метода. Не пугайтесь, объекты всё равно будут создаваться при помощи new, но делать это
+            будет фабричный метод.<br>На первый взгляд, это может показаться бессмысленным: мы просто переместили вызов
+            конструктора из одного конца программы в другой. Но теперь вы сможете переопределить фабричный метод в
+            подклассе, чтобы изменить тип создаваемого продукта.<br>Чтобы эта система заработала, все возвращаемые
+            объекты должны иметь общий интерфейс. Подклассы смогут производить объекты различных классов, следующих
+            одному и тому же интерфейсу.<br>Например, классы Грузовик и Судно реализуют интерфейс Транспорт с методом
+            доставить. Каждый из этих классов реализует метод по-своему: грузовики везут грузы по земле, а суда — по
+            морю. Фабричный метод в классе ДорожнойЛогистики вернёт объект-грузовик, а класс МорскойЛогистики —
+            объект-судно.<br>Для клиента фабричного метода нет разницы между этими объектами, так как он будет
+            трактовать их как некий абстрактный Транспорт. Для него будет важно, чтобы объект имел метод доставить, а
+            как конкретно он работает — не важно.</p>
+    </div>
+</div>
 
-        <footer></footer>
+<footer></footer>
 
-        <script src="js/pushy.min.js"></script>
-    </body>
+<script src="js/pushy.min.js"></script>
+</body>
 </html>

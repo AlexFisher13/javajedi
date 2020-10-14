@@ -1,129 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>JavaJedi</title>
-        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/demo.css">
-        <!-- Pushy CSS -->
-        <link rel="stylesheet" href="css/pushy.css">
-        <!-- My styles -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
 
-        <header><a href="index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+<header><a href="index.html"><h1 id="jedi">JavaJedi</h1></a></header>
 
-        <!-- Pushy Menu -->
-        <nav class="pushy pushy-left" data-focus="#first-link">
-            <div class="pushy-content">
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left" data-focus="#first-link">
+    <div class="pushy-content">
+        <ul>
+            <li class="pushy-submenu">
+                <button>Java</button>
                 <ul>
-                    <li class="pushy-submenu">
-                        <button>Java</button>
-                        <ul>
-                            <li class="pushy-link"><a href="java.html">Java</a></li>
-                            <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
-                            <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
-                            <li class="pushy-link"><a href="java8.html">Java 8</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Web</button>
-                        <ul>
-                            <li class="pushy-link"><a href="internet.html">Internet</a></li>
-                            <li class="pushy-link"><a href="http.html">HTTP</a></li>
-                            <li class="pushy-link"><a href="webservices.html">Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Базы данных</button>
-                        <ul>
-                            <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
-                            <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
-                            <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Автоматизация</button>
-                        <ul>
-                            <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
-                            <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
-                            <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Паттерны</button>
-                        <ul>
-                            <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
-                            <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
-                            <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
-                            <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
-                            <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Spring</button>
-                        <ul>
-                            <li class="pushy-link"><a href="spring.html">Spring</a></li>
-                            <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Сборка</button>
-                        <ul>
-                            <li class="pushy-link"><a href="maven.html">Maven</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Методологии разработки</button>
-                        <ul>
-                            <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-submenu">
-                        <button>Контроль версий</button>
-                        <ul>
-                            <li class="pushy-link"><a href="git.html">Git</a></li>
-                        </ul>
-                    </li>
-                    <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+                    <li class="pushy-link"><a href="java.html">Java</a></li>
+                    <li class="pushy-link"><a href="collections.html">Коллекции</a></li>
+                    <li class="pushy-link"><a href="multithreading.html">Многопоточность</a></li>
+                    <li class="pushy-link"><a href="java8.html">Java 8</a></li>
                 </ul>
-            </div>
-        </nav>
-
-        <!-- Content -->
-        <div id="container">
-            <!-- Menu Button -->
-            <button class="menu-btn">&#9776; Menu</button>
-            <div class="content">
-                <h2>Адаптер</h2>
-                <img src="img/adapter.png" alt="adapter">
-                <h3>Суть паттерна</h3>
-                <p>Адаптер — это структурный паттерн проектирования, который позволяет объектам с несовместимыми интерфейсами работать вместе.</p>
-                <h3>Проблема</h3>
-                <p>Представьте, что вы делаете приложение для торговли на бирже. Ваше приложение скачивает биржевые котировки из нескольких источников в XML, а затем рисует красивые графики.<br>В какой-то момент вы решаете улучшить приложение, применив стороннюю библиотеку аналитики. Но вот беда — библиотека поддерживает только формат данных JSON, несовместимый с вашим приложением.<br>Вы смогли бы переписать библиотеку, чтобы та поддерживала формат XML. Но, во-первых, это может нарушить работу существующего кода, который уже зависит от библиотеки. А во-вторых, у вас может просто не быть доступа к её исходному коду.</p>
-                <h3>Решение</h3>
-                <p>Вы можете создать адаптер. Это объект-переводчик, который трансформирует интерфейс или данные одного объекта в такой вид, чтобы он стал понятен другому объекту.<br>При этом адаптер оборачивает один из объектов, так что другой объект даже не знает о наличии первого. Например, вы можете обернуть объект, работающий в метрах, адаптером, который бы конвертировал данные в футы.<br>Адаптеры могут не только переводить данные из одного формата в другой, но и помогать объектам с разными интерфейсами работать сообща. Это работает так:</p>
-                <ul class="decimal">
-                    <li>Адаптер имеет интерфейс, который совместим с одним из объектов.</li>
-                    <li>Поэтому этот объект может свободно вызывать методы адаптера.</li>
-                    <li>Адаптер получает эти вызовы и перенаправляет их второму объекту, но уже в том формате и последовательности, которые понятны второму объекту.</li>
+            </li>
+            <li class="pushy-submenu">
+                <button>Web</button>
+                <ul>
+                    <li class="pushy-link"><a href="internet.html">Internet</a></li>
+                    <li class="pushy-link"><a href="http.html">HTTP</a></li>
+                    <li class="pushy-link"><a href="webservices.html">Services</a></li>
                 </ul>
-                <p>Иногда возможно создать даже двухсторонний адаптер, который работал бы в обе стороны.</p>
-                <p>Таким образом, в приложении биржевых котировок вы могли бы создать класс  XML_To_JSON_Adapter, который бы оборачивал объект того или иного класса библиотеки аналитики. Ваш код посылал бы адаптеру запросы в формате XML, а адаптер сначала транслировал входящие данные в формат JSON, а затем передавал бы их методам обёрнутого объекта аналитики.</p>
-                <h3>Аналогия из жизни</h3>
-                <p>Когда вы в первый раз летите за границу, вас может ждать сюрприз при попытке зарядить ноутбук. Стандарты розеток в разных странах отличаются. Ваша европейская зарядка будет бесполезна в США без специального адаптера, позволяющего подключиться к розетке другого типа.</p>
-            </div>
-        </div>
+            </li>
+            <li class="pushy-submenu">
+                <button>Базы данных</button>
+                <ul>
+                    <li class="pushy-link"><a href="database.html">Типы баз данных</a></li>
+                    <li class="pushy-link"><a href="transaction.html">Транзакции</a></li>
+                    <li class="pushy-link"><a href="jdbc.html">Hibernate JPA JDBC</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Автоматизация</button>
+                <ul>
+                    <li class="pushy-link"><a href="tddbdd.html">BDD/TDD jUnit/TestNG</a></li>
+                    <li class="pushy-link"><a href="selenium.html">Selenuim</a></li>
+                    <li class="pushy-link"><a href="selectors.html">Локаторы</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Паттерны</button>
+                <ul>
+                    <li class="pushy-link"><a href="singleton.html">Singleton</a></li>
+                    <li class="pushy-link"><a href="factorymethod.html">Factory method</a></li>
+                    <li class="pushy-link"><a href="prototype.html">Prototype</a></li>
+                    <li class="pushy-link"><a href="iterator.html">Iterator</a></li>
+                    <li class="pushy-link"><a href="adapter.html">Adapter</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Spring</button>
+                <ul>
+                    <li class="pushy-link"><a href="spring.html">Spring</a></li>
+                    <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Сборка</button>
+                <ul>
+                    <li class="pushy-link"><a href="maven.html">Maven</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Методологии разработки</button>
+                <ul>
+                    <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Контроль версий</button>
+                <ul>
+                    <li class="pushy-link"><a href="git.html">Git</a></li>
+                </ul>
+            </li>
+            <li class="pushy-link"><a href="regex.html">Регулярка</a></li>
+            <li class="pushy-submenu">
+                <button>DevOps</button>
+                <ul>
+                    <li class="pushy-link"><a href="cicd.html">CI/CD</a></li>
+                    <li class="pushy-link"><a href="containerization.html">Контейнеризация</a></li>
+                    <li class="pushy-link"><a href="devopsother.html">Elastic, Kibana, Heroku</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-        <footer></footer>
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h2>Адаптер</h2>
+        <img src="img/adapter.png" alt="adapter">
+        <h3>Суть паттерна</h3>
+        <p>Адаптер — это структурный паттерн проектирования, который позволяет объектам с несовместимыми интерфейсами
+            работать вместе.</p>
+        <h3>Проблема</h3>
+        <p>Представьте, что вы делаете приложение для торговли на бирже. Ваше приложение скачивает биржевые котировки из
+            нескольких источников в XML, а затем рисует красивые графики.<br>В какой-то момент вы решаете улучшить
+            приложение, применив стороннюю библиотеку аналитики. Но вот беда — библиотека поддерживает только формат
+            данных JSON, несовместимый с вашим приложением.<br>Вы смогли бы переписать библиотеку, чтобы та поддерживала
+            формат XML. Но, во-первых, это может нарушить работу существующего кода, который уже зависит от библиотеки.
+            А во-вторых, у вас может просто не быть доступа к её исходному коду.</p>
+        <h3>Решение</h3>
+        <p>Вы можете создать адаптер. Это объект-переводчик, который трансформирует интерфейс или данные одного объекта
+            в такой вид, чтобы он стал понятен другому объекту.<br>При этом адаптер оборачивает один из объектов, так
+            что другой объект даже не знает о наличии первого. Например, вы можете обернуть объект, работающий в метрах,
+            адаптером, который бы конвертировал данные в футы.<br>Адаптеры могут не только переводить данные из одного
+            формата в другой, но и помогать объектам с разными интерфейсами работать сообща. Это работает так:</p>
+        <ul class="decimal">
+            <li>Адаптер имеет интерфейс, который совместим с одним из объектов.</li>
+            <li>Поэтому этот объект может свободно вызывать методы адаптера.</li>
+            <li>Адаптер получает эти вызовы и перенаправляет их второму объекту, но уже в том формате и
+                последовательности, которые понятны второму объекту.
+            </li>
+        </ul>
+        <p>Иногда возможно создать даже двухсторонний адаптер, который работал бы в обе стороны.</p>
+        <p>Таким образом, в приложении биржевых котировок вы могли бы создать класс XML_To_JSON_Adapter, который бы
+            оборачивал объект того или иного класса библиотеки аналитики. Ваш код посылал бы адаптеру запросы в формате
+            XML, а адаптер сначала транслировал входящие данные в формат JSON, а затем передавал бы их методам
+            обёрнутого объекта аналитики.</p>
+        <h3>Аналогия из жизни</h3>
+        <p>Когда вы в первый раз летите за границу, вас может ждать сюрприз при попытке зарядить ноутбук. Стандарты
+            розеток в разных странах отличаются. Ваша европейская зарядка будет бесполезна в США без специального
+            адаптера, позволяющего подключиться к розетке другого типа.</p>
+    </div>
+</div>
 
-        <script src="js/pushy.min.js"></script>
-    </body>
+<footer></footer>
+
+<script src="js/pushy.min.js"></script>
+</body>
 </html>
