@@ -38,7 +38,7 @@
                 <ul>
                     <li class="pushy-link"><a href="internet.html">Internet</a></li>
                     <li class="pushy-link"><a href="http.html">HTTP</a></li>
-                    <li class="pushy-link"><a href="webservices.html">Services</a></li>
+                    <li class="pushy-link"><a href="webservices.html">SOAP WebServices and REST</a></li>
                 </ul>
             </li>
             <li class="pushy-submenu">
@@ -73,7 +73,6 @@
                     <li class="pushy-link"><a href="spring.html">Spring</a></li>
                     <li class="pushy-link"><a href="annotation.html">Аннотации</a></li>
                     <li class="pushy-link"><a href="springboot.html">Spring Boot</a></li>
-                    <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
                 </ul>
             </li>
             <li class="pushy-submenu">
@@ -85,6 +84,7 @@
                     <li class="pushy-link"><a href="devopsother.html">Elastic, Kibana, Heroku</a></li>
                 </ul>
             </li>
+            <li class="pushy-link"><a href="servlets.html">Servlets, WebServers</a></li>
             <li class="pushy-link"><a href="maven.html">Maven</a></li>
             <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
             <li class="pushy-link"><a href="git.html">Git</a></li>
@@ -99,39 +99,37 @@
     <!-- Menu Button -->
     <button class="menu-btn">&#9776; Menu</button>
     <div class="content">
-        <h2>Spring Boot MVC</h2>
-        <p>Spring Boot позволяет быстро и легко настаивать Spring приложения, имеет встроенный веб-сервер (Tomcat или
-            Jetty), имеет конфигурацию на аннотациях (без xml-файлов).</p>
-        <h3>MVC</h3>
-        <p>MVC – архитектура приложения, при котором оно разбивается на три части Model, View, Contoller.С точки зрения
-            Java, это три группы классов которые имеют слабые связи между собой, но сильные внутри себя.</p>
-        <ul class="pointless">
-            <li><b>Model</b> - содержит в себе бизнес логику приложения.</li>
-            <li><b>View</b> - содержит в себе все что связано с отображением данных пользователю.</li>
-            <li><b>Controller</b> - занимается обработкой данных пользователя.</li>
-        </ul>
-        <img src="img/mvc.png" alt="mvc">
-        <h3>Создаем проект</h3>
-        <p>Актуальный гайд лежит на <a href="http://spring.io/guides/gs/serving-web-content/ ">оф. сайте</a><br>1.
-            Создаем простой Maven проект и добавляем в него необходимые зависимости и плагины для веб.</p>
-        <img src="img/mvc2.png" alt="mvc2">
-        <h3>Создаем контроллер</h3>
-        <p>Контроллер нужен для того чтобы возвращать html-страницы которые мы замапили на какой то адрес.<br>Создаем
-            <code>src/main/java/hello/GreetingController.java</code></p>
-        <img src="img/mvc3.png" alt="mvc3">
-        <h3>Создаем страницу</h3>
-        <p>В папке temlate, в ресурсах создаем первую из многих страницу, которы будет отдавать в ответ на запросы.
-            <code>src/main/resources/templates/greeting.mustache</code></p>
-        <img src="img/mvc4.png" alt="mvc4">
-        <h3>Создаем класс запуска</h3>
-        <p>Создаем точку входа в наше Spring-приложение <code>src/main/java/hello/GreetingController.java</code></p>
-        <img src="img/mvc5.png" alt="mvc5">
-        <p>Теперь при запуске на localhost развернется сервер Tomcat, который по умолчанию будет слушать порт 8080. На
-            сервере запустится наше приложение и будет отдавать html страницу в ответ на запрос который мы замапили, а
-            именно <code>localhost:8080/greeting</code>.</p>
-        <img src="img/mvc6.png" alt="mvc6">
-        <p>Если возникают какие то сложности по запуску на данном порту. Нужно добавить в папку resources файл <code>application.properties</code>
-            и записать в него на каком порту запускаться. <code>server.port=8083</code></p>
+        <h2>Веб-серверы и сервлеты</h2>
+        <p>Раньше разработка любого веб-приложения на java сопровождалась написанием
+            огромного количества <b>одинакового кода</b>, который выполнял прием и обработку веб-запросов.</p>
+        <p>JCP(JavaCommunityProcess) решили <b>стандиртизовать этот код и вынести наружу</b>, и назвать это <b>веб-сервисом</b>, задача которого будет приём и
+            обработка веб-запросов и преобразование их в объекты для дальнейшей удобной работы с ними.<br>
+            И теперь вместо того чтобы писать веб-приложение внутри которого будет обработчик
+            веб-запросов, разработчик своё java приложение встраивает внутрь веб-сервера.
+            На данный момент времени 99% java приложений не запускаются самостоятельно,
+            они работают внутри веб-сервера.</p>
+        <p>Также JCP(JavaCommunityProcess) разработала такой стандарт как <b>Servlet</b>. По сути это java-класс,
+            которому веб-сервер передаёт уже обработанный запрос для дальнейшей работы. </p>
+        <p><b>DispatcherServlet в Spring</b> - это главный контроллер в приложении Spring MVC, который обрабатывает все входящие запросы
+            и передает их для обработки в различные методы в контроллеры (@Controller, @RestController).</p>
+        <p>Так как веб-сервисы реализовывают работу с сервлетам их называют <b>сервлет-конетйнерами</b>.
+            Самые популярные: <b>Tomcat, Jetty, JBoss, GlassFish.</b><br>
+            Также есть очень тяжеловестные и мощыне интерпрайз решения - <b>Weblogic(Oracle)</b> и <b>WebSphere(IBM)</b>.
+            Их функционал не огрничивается обработкой запросов, они помимо сервлет контйнеров поддерживоют
+            огромное кол-во функионала. Например, главной их особенностью является свободная поддержка
+            кластеров - это когда одно приложение запускается на множестве физических компьютеров,
+            на них всех установлен один и тот же веблоджик например, и она автоматически балансирует нагрузку.
+            Программист просто пишет код не заботясь обо всем этом, а веб-сервер сам всё делает.</p>
+
+        <h3>Реализация веб-сервисов в Java: JAVA SERVLETS</h3>
+        <p><b>Java Servlets</b> – это технология реализующая возможности веб-сервиса, то есть она позволяет принимать,
+            обрабатывать сетевые запросы и отправлять ответы. </p>
+        <p>Фактически в java это класс, расширяющий клаcс <b>HttpServlet</b>, и помеченный аннотацией <b>@WebServlet</b>,
+            у которого есть два главных метода:<br>
+            <code>void doGet(HttpServletRequest request, HttpServletResponse response) {}</code><br>
+            <code>void doPost(HttpServletRequest request, HttpServletResponse response) {}</code></p>
+        <p>По сути сервлет связывает ссылку из адресной стокрои и java-класс, которые выполняет какую то логику и
+            возвращает отвтет в виде HTML, JSP, JSON и др.</p>
     </div>
 </div>
 

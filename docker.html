@@ -38,7 +38,7 @@
                 <ul>
                     <li class="pushy-link"><a href="internet.html">Internet</a></li>
                     <li class="pushy-link"><a href="http.html">HTTP</a></li>
-                    <li class="pushy-link"><a href="webservices.html">Services</a></li>
+                    <li class="pushy-link"><a href="webservices.html">SOAP WebServices and REST</a></li>
                 </ul>
             </li>
             <li class="pushy-submenu">
@@ -73,7 +73,6 @@
                     <li class="pushy-link"><a href="spring.html">Spring</a></li>
                     <li class="pushy-link"><a href="annotation.html">Аннотации</a></li>
                     <li class="pushy-link"><a href="springboot.html">Spring Boot</a></li>
-                    <li class="pushy-link"><a href="springmvc.html">Spring Boot MVC</a></li>
                 </ul>
             </li>
             <li class="pushy-submenu">
@@ -85,6 +84,7 @@
                     <li class="pushy-link"><a href="devopsother.html">Elastic, Kibana, Heroku</a></li>
                 </ul>
             </li>
+            <li class="pushy-link"><a href="servlets.html">Servlets, WebServers</a></li>
             <li class="pushy-link"><a href="maven.html">Maven</a></li>
             <li class="pushy-link"><a href="scrum.html">Scrum</a></li>
             <li class="pushy-link"><a href="git.html">Git</a></li>
@@ -181,7 +181,7 @@
         <p><b>docker build</b> — собирает образ Docker из Dockerfile и набора файлов, расположенных по определённому пути.
             Параметр -t используется, чтобы задать имя образа, последний параметр. — наименование каталога (в нашем случае текущий каталог).</p>
         <p><b>docker images</b> — выводит список образов в вашей системе.</p>
-        <p> — позволяет вывести на консоль логи указанного контейнера. Для этого необходимо указать имя или id контейнера. Можно использовать флаг --follow, чтобы следить за логами работающего контейнера:
+        <p><b>docker logs</b> — позволяет вывести на консоль логи указанного контейнера. Для этого необходимо указать имя или id контейнера. Можно использовать флаг --follow, чтобы следить за логами работающего контейнера:
             например, docker logs --follow c5ecc88de8f9.</p>
         <p><b>docker run</b> — запускает контейнер на основе указанного образа.</p>
         <p><b>docker stop</b> — останавливает контейнер. Можно передать опцию $(docker ps -a -q) для остановки всех запущенных контейнеров.</p>
