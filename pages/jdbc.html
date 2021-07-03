@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="../css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+<header><a href="../index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+
+<!-- Pushy Menu -->
+<script src="../js/menu.js"></script>
+
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h3>JDBC</h3>
+        <p>JDBC (Java DataBase Connectivity) - стандарт взаимодействия Java-приложений с различными СУБД. JDBC
+            представляет собой набор драйверов для разных СУБД. Для начала работы в приложении нужно получить экземпляр
+            драйвер и открыть connection к БД, указав ее URL, логин и пароль. После чего можно выполнять запросы.</p>
+        <p>JDBC по сути представляет собой обычно 2 jar архива. Один jar набор интерфейсов для работы с БД, а второй это
+            драйвер для конкретной БД, который представляет собой свою собственную реализацию этих интерфейсов для
+            каждой конкретной БД.</p>
+        <h3>JPA</h3>
+        <p>JPA (Java Persistance API) – спецификация, в которой описаны основные правила для реализации принципов в ORM
+            для Java, посредством JDBC.<br>JPA имеет множество реализаций:</p>
+        <ul>
+            <li>OpenJPA (Apache)</li>
+            <li>TopLink (Oracle)</li>
+            <li>Hibernate (самый популярный, которые используется также в Spring JPA)</li>
+        </ul>
+        <h3>Hibernate</h3>
+        <p>Hibernate – это ORM фреймворк для Java, реализация JPA спецификации. Эта технология является крайне мощной и
+            имеет высокие показатели производительности.<br>Hibernate создаёт связь между таблицами в базе данных (далее
+            – БД) и Java-классами. Это избавляет разработчиков от огромного количества лишней, рутинной работы, в
+            которой крайне легко допустить ошибку и крайне трудно потом её найти.</p>
+        <img src="../img/hibernate.jpg" alt="hibernate">
+        <p>Преимущества Hibernate:</p>
+        <ul>
+            <li>Обеспечивает простой API для записи и получения Java-объектов в/из БД.</li>
+            <li>Минимизирует доступ к БД, используя стратегии fetching.</li>
+            <li>Не требует сервера приложения.</li>
+            <li>Позволяет нам не работать с типами данных языка SQL, а иметь дело с привычыми нам типами данных Java.
+            </li>
+            <li>Заботится о создании связей между Java-классами и таблицами БД с помощью XML-файлов не внося изменения в
+                программный код.
+            </li>
+            <liЕсли нам неоходимо изменить БД, то достаточно лишь внести изменения в XML-файлы.></li>
+                <li>Hibernate поддердивает все основные СУБД: MySQL, Oracle, PostgreSQL, Microsoft SQL Server Database,
+                    HSQL, DB2.
+                </li>
+        </ul>
+        <h3>Аннотации</h3>
+        <p>В Hibernate предусмотрена возможность конфигурирования прилоения с помощью аннотаций.<br>
+            <code>@Entity</code> указывает Hibernate, что данный класс является сущностью (entity bean). Такой класс
+            должен иметь конструктор по-умолчанию (пустой конструктор).<br>
+            <code>@Table</code> указывает Hibernate, с какой именно таблицей необходимо связать (map) данный класс.
+            Аннотация @Table имеет различные аттрибуты, с помощью которых мы можем указать имя таблицы, каталог, БД и
+            уникальность столбцов в таблиц БД.<br>
+            <code>@Id</code> указываем первичный ключ (Primary Key) данного класса.<br>
+            <code>@GeneratedValue</code> используется вместе с аннотацией @Id и определяет такие паметры, как strategy и
+            generator.<br>
+            <code>@Column(name=”user”)</code> определяет к какому столбцу в таблице БД относится конкретное поле класса
+            (аттрибут класса)</p>
+
+    </div>
+</div>
+
+<footer></footer>
+
+<script src="../js/pushy.min.js"></script>
+</body>
+</html>

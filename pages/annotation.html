@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="../css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+<header><a href="../index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+
+<!-- Pushy Menu -->
+<script src="../js/menu.js"></script>
+
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h2>Аннотации Spring Boot</h2>
+        <p>В классическом Spring приложении каждый раз необходимо выполнять долгую и одинаковую каждый раз
+            настройку приложения, определять всю конфигурацию и тд. SpringBoot ахуенен тем что использует
+            автоматическую настройку и сканирование компонентов. К тому же нужно добавлять кучи зависмостей,
+            для типичных проектов они собраты в стартер паки <code>(starter-web и starter-jpa).</code></p>
+        <p><b>@SpringBootApplication</b> - указывает Spring точку входа в приложения, и включает в себя следующие 3 аннотации: <b>@EnableAutoConfiguration, @ComponentScan, @Configuration</b></p>
+        <p><b>@EnableAutoConfiguration</b> - включает механизм автоматической настройки Spring-контекста, путем сканирования компонентов. Аннотация указывает Spring'у "Угадать", чтобы "угадать",
+            как вы хотите настроить Spring, на основе зависимостей jar что вы добавили.
+            Например, если HSQLDB находится в вашем пути к классам, и вы не настроили вручную соединение с базой данных beans, тогда Spring будет автоматически настраивать базу данных в памяти.</p>
+        <p><b>@ComponentScan</b> - включавет @Component сканирование пакета, в котором находится приложение. Аннотация сообщает Spring искать другие компоненты, конфигурации и службы в указанном пакете.
+            Spring способен автоматически сканировать, обнаруживать и регистрировать ваш beans или компоненты из заранее определенного пакета проекта.
+            Если пакет не указан, то текущий пакет классов принимается как корневой пакет.</p>
+        <p><b>@Configuration</b> - аннотация показывает что класс, является местом, где бины настроены и будут кандидатом на автоматическое обнаружение.</p>
+        <p><b>@Component</b> - aннотация, которой помечаются классы, для того чтобы их обнаруживал спринг и считал их бинами. Если класс не помочен @Component мы не можем его заавтовайрить(@Autowired).<br>
+            У @Component есть несколько наследников:<br>
+            <b>@Repository, @Service, @Controller</b> - всё это @Component но для конретных случаев, указываея на их роль, Сервис - это бизнес-логика, контроллер обслуживает веб заропсы, а репозитори - работу с бд.
+        </p>
+        <p><b> @Bean</b> также является аннотацией, которую Spring использует для сбора bean-компонентов во время выполнения, но не используется на уровне класса.
+            Скорее, мы аннотируем методы с помощью @Bean, чтобы Spring мог сохранить результат метода как компонент Spring.</p>
+        <p><b></b></p>
+
+        <h3>Определение Контроллера</h3>
+        <p>DispatcherServlet отправляет запрос контроллерам для выполнения определённых функций. Аннотация <b>@Controller</b> указывает, что конкретный класс является контроллером.</p>
+        <p><b>@RequestMapping</b> - аннотация используемая для мапинга (связывания) с URL для всего класса или для конкретного метода обработчика.</p>
+        <p>@Controller - назначает шаблон данному классу, показывая его роль. Это значит, что диспетчер будет сканировать Controller-классы на предмет реализованных методов, проверяя @RequestMapping аннотации.</p>
+        <p>Аннотация <b>@RestController</b>была введена в Spring 4.0 для упрощения создания веб-сервисов RESTful. Это удобная аннотация, которая сочетает в себе @Controller и @ResponseBody, что устраняет необходимость аннотировать каждый метод обработки запросов класса контроллера аннотацией @ResponseBody.</p>
+
+
+
+</div>
+
+<footer></footer>
+
+<script src="../js/pushy.min.js"></script>
+</body>
+</html>

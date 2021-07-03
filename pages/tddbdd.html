@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="../css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+<header><a href="../index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+
+<!-- Pushy Menu -->
+<script src="../js/menu.js"></script>
+
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h3>TDD</h3>
+        <p>Сегодня все большую популярность приобретает test-driven development (TDD) – техника разработки ПО, при
+            которой сначала пишется тест на определенный функционал, а затем пишется реализация этого функционала. Что
+            использовать для написания этих самых тестов</p>
+        <h3>BDD</h3>
+        <p>Наряду с TDD также существует такое понятие, как data-driven testing (DDT) — техника написания тестов, при
+            которой данные для тестов хранятся отдельно от самих тестов. Они могут храниться в базе данных, файле,
+            генерироваться во время исполнения теста. Это очень удобно, так как один и тот же функционал тестируется на
+            различных наборах данных, при этом добавление, удаление или изменение этих данных максимально упрощено.</p>
+        <h3>jUnit</h3>
+        <p>Первым фреймворком для тестирования Java-приложений был jUnit из семейства подобных фреймворков xUnit. Для
+            обозначения теста метода помечается аннотацией @Test. А проверки чаще всего выполняются с помощью класса
+            Assert хотя иногда используют ключевое слово assert.</p>
+        <h3>TestNG</h3>
+        <p>TestNG – это прокачанный jUnit без его недостатков и с новыми возможностями, а именно в первую очередь
+            реализующий технику DDT.<br>
+            Приемущества TestNG:</p>
+        <ul>
+            <li>Прогон тестов на большом количестве примеров данных (как в Cucumber) с помощью аннотации @DataProvider
+            </li>
+            <li>Намного больше аннотаций до и после тестов BeforeTest, BeforeGroup, BeforeSuit и также After.</li>
+        </ul>
+    </div>
+</div>
+
+<footer></footer>
+
+<script src="../js/pushy.min.js"></script>
+</body>
+</html>

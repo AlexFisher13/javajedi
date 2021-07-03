@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="../css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+<header><a href="../index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+
+<!-- Pushy Menu -->
+<script src="../js/menu.js"></script>
+
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h2>Веб-серверы и сервлеты</h2>
+        <p>Раньше разработка любого веб-приложения на java сопровождалась написанием
+            огромного количества <b>одинакового кода</b>, который выполнял прием и обработку веб-запросов.</p>
+        <p>JCP(JavaCommunityProcess) решили <b>стандиртизовать этот код и вынести наружу</b>, и назвать это <b>веб-сервисом</b>, задача которого будет приём и
+            обработка веб-запросов и преобразование их в объекты для дальнейшей удобной работы с ними.<br>
+            И теперь вместо того чтобы писать веб-приложение внутри которого будет обработчик
+            веб-запросов, разработчик своё java приложение встраивает внутрь веб-сервера.
+            На данный момент времени 99% java приложений не запускаются самостоятельно,
+            они работают внутри веб-сервера.</p>
+        <p>Также JCP(JavaCommunityProcess) разработала такой стандарт как <b>Servlet</b>. По сути это java-класс,
+            которому веб-сервер передаёт уже обработанный запрос для дальнейшей работы. </p>
+        <p><b>DispatcherServlet в Spring</b> - это главный контроллер в приложении Spring MVC, который обрабатывает все входящие запросы
+            и передает их для обработки в различные методы в контроллеры (@Controller, @RestController).</p>
+        <p>Так как веб-сервисы реализовывают работу с сервлетам их называют <b>сервлет-конетйнерами</b>.
+            Самые популярные: <b>Tomcat, Jetty, JBoss, GlassFish.</b><br>
+            Также есть очень тяжеловестные и мощыне интерпрайз решения - <b>Weblogic(Oracle)</b> и <b>WebSphere(IBM)</b>.
+            Их функционал не огрничивается обработкой запросов, они помимо сервлет контйнеров поддерживоют
+            огромное кол-во функионала. Например, главной их особенностью является свободная поддержка
+            кластеров - это когда одно приложение запускается на множестве физических компьютеров,
+            на них всех установлен один и тот же веблоджик например, и она автоматически балансирует нагрузку.
+            Программист просто пишет код не заботясь обо всем этом, а веб-сервер сам всё делает.</p>
+
+        <h3>Реализация веб-сервисов в Java: JAVA SERVLETS</h3>
+        <p><b>Java Servlets</b> – это технология реализующая возможности веб-сервиса, то есть она позволяет принимать,
+            обрабатывать сетевые запросы и отправлять ответы. </p>
+        <p>Фактически в java это класс, расширяющий клаcс <b>HttpServlet</b>, и помеченный аннотацией <b>@WebServlet</b>,
+            у которого есть два главных метода:<br>
+            <code>void doGet(HttpServletRequest request, HttpServletResponse response) {}</code><br>
+            <code>void doPost(HttpServletRequest request, HttpServletResponse response) {}</code></p>
+        <p>По сути сервлет связывает ссылку из адресной стокрои и java-класс, которые выполняет какую то логику и
+            возвращает отвтет в виде HTML, JSP, JSON и др.</p>
+    </div>
+</div>
+
+<footer></footer>
+
+<script src="../js/pushy.min.js"></script>
+</body>
+</html>
