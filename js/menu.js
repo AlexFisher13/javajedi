@@ -56,19 +56,25 @@ document.write("<nav class='pushy pushy-left' data-focus='#first-link'>\n" +
     "                </ul>\n" +
     "            </li>\n" +
     "            <li class='pushy-submenu'>\n" +
-    "                <button>DevOps</button>\n" +
+    "                <button>System Design</button>\n" +
     "                <ul>\n" +
+    "                    <li class='pushy-link'><a href='/javajedi/pages/architecture.html'>Architecture</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/docker.html'>Docker</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/cicd.html'>CI/CD</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/containerization.html'>Контейнеризация</a></li>\n" +
-    "                    <li class='pushy-link'><a href='/javajedi/pages/devopsother.html'>Elastic, Kibana, Heroku</a></li>\n" +
+    "                    <li class='pushy-link'><a href='/javajedi/pages/devopsother.html'>Elastic, Kibana</a></li>\n" +
     "                </ul>\n" +
     "            </li>\n" +
     "            <li class='pushy-link'><a href='/javajedi/pages/maven.html'>Maven</a></li>\n" +
     "            <li class='pushy-link'><a href='/javajedi/pages/scrum.html'>Scrum</a></li>\n" +
     "            <li class='pushy-link'><a href='/javajedi/pages/git.html'>Git</a></li>\n" +
     "            <li class='pushy-link'><a href='/javajedi/pages/regex.html'>Regex</a></li>\n" +
-    "            <li class='pushy-link'><a href='/javajedi/pages/app.html'>App (Heroku,Mongo,React Native,Spring Boot)</a></li>\n" +
+    "            <li class='pushy-submenu'>\n" +
+    "                <button>Pet Projects</button>\n" +
+    "                <ul>\n" +
+    "                    <li class='pushy-link'><a href='/javajedi/pages/app.html'>Progress</a></li>\n" +
+    "                </ul>\n" +
+    "            </li>\n" +
     "        </ul>\n" +
     "    </div>\n" +
     "</nav>")
