@@ -53,6 +53,14 @@ document.write("<nav class='pushy pushy-left' data-focus='#first-link'>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/annotation.html'>Аннотации</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/springboot.html'>Spring Boot</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/beans.html'>Жизненный цикл бина</a></li>\n" +
+    "                    <li class='pushy-link'><a href='/javajedi/pages/springdata.html'>Spring Data</a></li>\n" +
+    "                </ul>\n" +
+    "            </li>\n" +
+    "            <li class='pushy-submenu'>\n" +
+    "                <button>Libs</button>\n" +
+    "                <ul>\n" +
+    "                    <li class='pushy-link'><a href='/javajedi/pages/swagger.html'>Swagger</a></li>\n" +
+    "                    <li class='pushy-link'><a href='/javajedi/pages/liquibase.html'>Liquibase</a></li>\n" +
     "                </ul>\n" +
     "            </li>\n" +
     "            <li class='pushy-submenu'>\n" +
