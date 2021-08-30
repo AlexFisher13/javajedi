@@ -83,6 +83,7 @@ document.write("<nav class='pushy pushy-left' data-focus='#first-link'>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/app.html'>Progress</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/telegrambot.html'>Telegram Bots</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/interceptor.html'>Custom Annotation, BeanPostProcessor, Interceptor</a></li>\n" +
+    "                    <li class='pushy-link'><a href='/javajedi/pages/strategy.html'>Strategy</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/factory-strategy.html'>Factory-Strategy</a></li>\n" +
     "                </ul>\n" +
     "            </li>\n" +
