@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="../css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+<header><a href="../index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+
+<!-- Pushy Menu -->
+<script src="../js/menu.js"></script>
+
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h2>Рефакторинг с помощью паттернов Фабрика и Стратегия</h2>
+        <h3>Проблема:</h3>
+        <p>Есть consentService, который работает со всеми типами согласий, и в нем много логики по работе с отдельным типом согласия HСP. Н
+            еобходимо вынести работу с этим типом согласия в тодельный сервис-наследник, и общаться к нему когда у нас согласие типа HCP.
+            Реализовать логику с помощью паттерна стретегия и фабрика.</p>
+        <h3>Решение:</h3>
+        <p>Создаём фабрику, которая нам будет возвращать конкретную имплементацию сервиса, по типу консента. Создаём список имплементаций сервиса,
+            в который спринг будет самостоятельно складывать все имплементации интерфейса сервиса. Далее из списка имплементаций создаём мапу,
+            "тип консента": имплементация сервиса.</p>
+        <img src="../img/factory-strategy/1.PNG"/>
+        <p>Не забыть над основной имплементаций указать @Primary, для того что бы он у нас брался спрингом по дефолту.</p>
+        <img src="../img/factory-strategy/3.PNG"/>
+        <p>Создаём новый сервис и наследуемся от основного, и переносим все методы которые касаются нашего типа согласий.</p>
+        <img src="../img/factory-strategy/4.PNG"/>
+        <p>Меняем в API получение сервиса, мы теперь будет его получать из фабрики.</p>
+        <img src="../img/factory-strategy/2.PNG"/>
+    </div>
+</div>
+
+<footer></footer>
+
+<script src="../js/pushy.min.js"></script>
+</body>
+</html>
