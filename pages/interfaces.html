@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>JavaJedi</title>
+        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/demo.css">
+        <!-- Pushy CSS -->
+        <link rel="stylesheet" href="../css/pushy.css">
+        <!-- My styles -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    <body>
+
+<header><a href="../index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+
+<!-- Pushy Menu -->
+<script src="../js/menu.js"></script>
+
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h2>Основные Функциональные интерфейсы используемые в Stream API</h2>
+       	<p>Функциональные интерфейсы – интерфейсы, которые содержат только один абстрактный (нереализованный метод).
+            В результате он может быть неявно преобразован в лямбда-выражение. Кстати, дефолтных (реализованных) и статических методов они могут содержать сколько угодно.<br>
+            Чтобы другие разработчики не могли написать еще абстрактные методы в функциональный интерфейс его нужно пометить аннотацией @FunctionalInterface.
+            И в случае, если будет написан новый абстрактный метод, то код не скомпилируется.<br>
+            В стандартной библиотеке java 8 написано несколько функциональных интерфейсов, которые помимо абстрактного метода,
+            отражающего суть интерфейса, имеют еще ряд дефолтных методов, позволяющих строить сложные условия.<br>
+            Чтобы использовать функциональные интерфейсы нам нужно на ходу анонимно реализовать их абстрактный метод.</p>
+        <h3>Predicate</h3>
+        <p>Predicate – условие, обычно применяется для фильтрации, принимает один аргумент, и возвращает boolean.</p>
+        <p>Абстрактный метод: test()</p>
+        <p>Дефолтные методы: negate(), and(), or().</p>
+        <p>Пример применения: чаще всего в методе filter() из Stream API.</p>
+        <p>Напишем пару условий для фильтрации коллекции, отсортируем на четность, применим negate, и сделаем индивидуальный фильтр для числа 6.</p>
+        <img src="../img/interfaces/predicate.png" height="329" width="621"/>
+
+        <h3>Function</h3>
+        <p>Function – действие, совершаемое над элементом (обычно элементом коллекции). Принимает значение одного типа а возвращает другого типа.</p>
+        <p>Абстрактный метод: apply()</p>
+        <p>Дефолтные методы:</p>
+        <ul>
+            <li>compose() – который может сделать композицию из нескольких функций</li>
+            <li>andThen() – который за существующей функцией добавляет еще одну функцию</li>
+        </ul>
+        <p>Статический метод: identity() – возвращает свой входной аргумент.</p>
+        <p>Пример применения: чаще всего в методе map() из Stream API.<br>
+           Проведём какие-нить манипуляции с элементами коллекции, меняющие их тип, например, округлить числа Double и привести их к Long.
+            И сделать еще одну функции следом за первой, которая заменит Long на String основываясь на четности.
+        </p>
+        <img src="../img/interfaces/function.png" height="401" width="641"/>
+
+        <h3>Consumer</h3>
+        <p>Consumer – это чисто потребитель, он только принимает аргумент, выполняет какое то действие, и ничего не возвращает.</p>
+        <p>Абстрактный метод: accept()</p>
+        <p>Дефолтные методы: andThen() – который за существующим потребителем может добавить еще один.</p>
+        <p>Пример применения: чаще всего в методе forEach() из Stream API. Идеален для того чтобы вывести коллекцию.</p>
+        <img src="../img/interfaces/consumer.png" height="181" width="607"/>
+
+        <h3>BiConsumer</h3>
+        <p>BiConsumer – двойной потребитель, то же самое что и Consumer имеет те же методы, за одним отличием,
+            он принимает на вход 2 аргумента. Идеален для работы с Map’ами.</p>
+        <img src="../img/interfaces/biconsumer.png" height="255" width="641"/>
+
+
+        <h3>Supplier</h3>
+        <p>Supplier – поставщик, генератор, ничего не принимает на вход но что то возвращает. </p>
+        <p>Абстрактный метод: get().</p>
+        <p>Дефолтных и статических методов нет.</p>
+        <p>Пример, Supplier, возвращать случайное имя из списка.</p>
+        <img src="../img/interfaces/supplier1.png" height="185" width="469"/>
+        <p>В стримах Supplier применяется в методе collect().</p>
+        <p>Суть метода collect – собрать стрим в коллекцию.</p>
+        <p><code>collect(Supplier supplier, BiConsumer accumulator, BiConsumer combiner)</code> — тот же, что и <code>collect(collector)</code>,
+            только параметры разбиты для удобства (<b>supplier</b> генерирует пустые новые объекты, например new ArrayList(),
+            <b>accumulator</b> добавляет элемент в контейнер, <b>combiner</b> объединяет части стрима воедино);</p>
+        <p>Пример:</p>
+        <img src="../img/interfaces/supplier2.png" height="107" width="331"/>
+
+        <h3>Comparator</h3>
+        <p>Comparator – сравниватель, нужен чтобы сравнивать элементы между собой.</p>
+        <p>Абстрактный метод: compare() – принимает в себя два аргумента для сравнения, и должен вернуть число.
+            Если объекты равно должно вернуть 0, если первый больше – то положительное число, если меньше – отрицательное.</p>
+        <p>Дефолтные методы:</p>
+        <ul>
+            <li>reverse()</li>
+            <li>thenComparing() – который дает возможность делать цепочку сравнений.</li>
+            <li>и др.</li>
+        </ul>
+        <p>Статическиу методы: nullFirst(), nullLast() и др.</p>
+        <p>Пример применения: в методах sorted()</p>
+        <img src="../img/interfaces/comparator.png" height="389" width="468"/>
+
+    </div>
+</div>
+
+<footer></footer>
+
+<script src="../js/pushy.min.js"></script>
+    </body>
+</html>
