@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="../css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+<header><a href="../index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+
+<!-- Pushy Menu -->
+<script src="../js/menu.js"></script>
+
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h3>Цель:</h3>
+        <p>Необходимо логировать реквесты, респонзы и хедеры некоторых методов soap-сервисов</p>
+        <h3>План:</h3>
+        <ol>
+            <li>Написать свою аннотацию, и вещать на те методы который мы хотим логировать</li>
+            <li>Написать свой BeanPostProcessor который будет при создании бинов будет чекать есть ли наша аннотация,
+                и если да, то будет добавлять эти методы в так называваемый LogConfig</li>
+            <li>Написать LogConfig который будет в себе содержать методы которые мы будем логировать</li>
+            <li>Написать свой interceptor (перехватчик запросов) и добавить его в контекст сервлета, который на уровне сервлета будет перехватывать запросы,
+                и смотреть есть ли они в нашем LogConfig, если да, то логировать их.</li>
+        </ol>
+
+        <p>Саздаём новую аннотацию и указывает то что мы ее будем вешать на методы (ElementType.METHOD) и то что она будет работать в RUNTIME</p>
+        <img src="../img/interceptor/1.PNG"/>
+        <p>Вешаем эту аннотацию на метод который нам нужно логировать.</p>
+        <img src="../img/interceptor/2.PNG"/>
+        <p>Пишем наш BeanPostProcessor который будет расширять основной BeanPostProcessor и добавлять в него свою логику,
+        а именно при подготовке всех бинов мы будем их просматривать на наличие нужных нам аннотаций (@Endpoint), и находя их
+        мы будем у них просмотривать методы на предмет наличия нашей аннотации @UserActionLog, и при их нахождении добавлять в LogConfig.</p>
+        <img src="../img/interceptor/3.PNG"/>
+        <p>Пишем LogConfig который по сути будет из себя представлять список методов которые нужно логировать.</p>
+        <img src="../img/interceptor/4.PNG"/>
+        <p>Теперь когда у нас есть список методов которые нужно логировать, мы можем написать перехватчик запросов на уровне сервелета,
+        который при перехвате запроса будет проверять есть ои он в списке LogConfig, если да то логировать его.</p>
+        <img src="../img/interceptor/5.PNG"/>
+        <p>Не забываем добавить наши созданные бины (LogConfig и BeanPostProcessor) в контекст спринга</p>
+        <img src="../img/interceptor/6.PNG"/>
+        <p>А также нужно добавить наш interceptor в конфиг нашего сервлета.</p>
+        <img src="../img/interceptor/7.PNG"/>
+    </div>
+
+<footer></footer>
+
+<script src="../js/pushy.min.js"></script>
+</body>
+</html>
