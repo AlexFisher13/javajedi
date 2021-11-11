@@ -65,12 +65,12 @@ document.write("<nav class='pushy pushy-left' data-focus='#first-link'>\n" +
     "                </ul>\n" +
     "            </li>\n" +
     "            <li class='pushy-submenu'>\n" +
-    "                <button>System Design</button>\n" +
+    "                <button>DevOps</button>\n" +
     "                <ul>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/architecture.html'>Architecture</a></li>\n" +
-    "                    <li class='pushy-link'><a href='/javajedi/pages/docker.html'>Docker</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/cicd.html'>CI/CD</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/containerization.html'>Контейнеризация</a></li>\n" +
+    "                    <li class='pushy-link'><a href='/javajedi/pages/docker.html'>Работа с Docker</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/devopsother.html'>Elastic, Kibana</a></li>\n" +
     "                </ul>\n" +
     "            </li>\n" +
