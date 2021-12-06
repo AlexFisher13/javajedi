@@ -55,6 +55,9 @@ code {
   background-color: #c8eef4;
   color: #004715;
 }
+span {
+  color: darkgray;
+}
 hr {
   margin: 35px 0;
 }
