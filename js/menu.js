@@ -55,6 +55,7 @@ document.write("<nav class='pushy pushy-left' data-focus='#first-link'>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/springboot.html'>Spring Boot</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/beans.html'>Жизненный цикл бина</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/springdata.html'>Spring Data</a></li>\n" +
+    "                    <li class='pushy-link'><a href='/javajedi/pages/quartz.html'>Quartz</a></li>\n" +
     "                </ul>\n" +
     "            </li>\n" +
     "            <li class='pushy-submenu'>\n" +
