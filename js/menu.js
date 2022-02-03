@@ -9,6 +9,7 @@ document.write("<nav class='pushy pushy-left' data-focus='#first-link'>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/multithreading.html'>Многопоточность</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/java8.html'>Java 8</a></li>\n" +
     "                    <li class='pushy-link'><a href='/javajedi/pages/interfaces.html'>Функциональные интерфейсы</a></li>\n" +
+    "                    <li class='pushy-link'><a href='/javajedi/pages/optional.html'>Optional</a></li>\n" +
     "                </ul>\n" +
     "            </li>\n" +
     "            <li class='pushy-submenu'>\n" +

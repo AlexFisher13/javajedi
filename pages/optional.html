@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JavaJedi</title>
+    <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <!-- Pushy CSS -->
+    <link rel="stylesheet" href="../css/pushy.css">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+<header><a href="../index.html"><h1 id="jedi">JavaJedi</h1></a></header>
+
+<!-- Pushy Menu -->
+<script src="../js/menu.js"></script>
+
+<!-- Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <button class="menu-btn">&#9776; Menu</button>
+    <div class="content">
+        <h2>Optional</h2>
+        <p>
+            <h3>Создание</h3>
+            Optional&lt;String&gt; fullOpt = Optional.of("Hello"); //of бесполезен так как не уберегает от NPE, нужно использовать ofNullable<br>
+            Optional&lt;String&gt; emptOpt = Optional.empty();<br>
+            <br>
+            System.out.println(fullOpt.isPresent()); // true<br>
+            System.out.println(emptOpt.isEmpty()); // false<br>
+            <br>
+        <b>orElse</b><br>
+            System.out.println(fullOpt.orElse("world")); // Hello<br>
+            System.out.println(emptOpt.orElse("world")); // world<br>
+            <br>
+        <b>ofNullable - предназначен как раз для потенциально null объектов</b><br>
+            // Optional&lt;String&gt; emptOpt2 = Optional.of(null); // NPE т.к. of не предназначен для null<br>
+            Optional&lt;String&gt; emptOpt2 = Optional.ofNullable(null);<br>
+            System.out.println(emptOpt2.orElse("world")); // world<br>
+            <br>
+        <b>map - изменят наш объект даже меня тип возвращаемого значение</b><br>
+            System.out.println(fullOpt.map(String::toUpperCase).orElse("WORLD"));<br>
+            System.out.println(emptOpt2.map(String::toUpperCase).orElse("WORLD"));<br>
+            <br>
+        <b>ifPresent - ничего не позвращает, просто че то делает если optioanl не пустой</b><br>
+            fullOpt.ifPresent(e -> System.out.println("ifPresent " + e));<br>
+            // для пустого emptOpt просто не сработает<br>
+            <br>
+        <b> filter по сути делает валидацию на соответвие заданному условию</b><br>
+            System.out.println(fullOpt.filter(o -> o.equals("jello")).orElse("no"));<br>
+        </p>
+    </div>
+</div>
+
+<footer></footer>
+
+<script src="../js/pushy.min.js"></script>
+</body>
+</html>
