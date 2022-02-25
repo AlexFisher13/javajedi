@@ -17,7 +17,7 @@
 .pushy a {
   display: block;
   color: #b3b3b1;
-  padding: 15px 30px;
+  padding: 2px 15px;
   text-decoration: none;
 }
 .pushy a:hover {
@@ -136,7 +136,7 @@
 .pushy-submenu button {
   width: 100%;
   color: #b3b3b1;
-  padding: 15px 30px;
+  padding: 2px 15px;
   text-align: left;
   background: transparent;
   border: 0;
