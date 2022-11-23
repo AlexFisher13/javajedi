@@ -92,6 +92,13 @@
             <li>Переместиться на ветку experimentalBranch: <code>git checkout experimentalBranch</code></li>
             <li>Смержить текующую ветку с experimentalBranch: <code>git merge experimentalBranch</code></li>
         </ul>
+        <h3>Удаление коммита</h3>
+        <ul>
+            <li><code>git reset --hard commit_id</code> // commit_id - идентификатор коммита, к которому нужно вернуться.</li>
+            <li>А что делать, если изменения опубликованы на GitHub? Всего лишь выполнить ещё одну команду: <code>git push --force</code>
+            <br>В таком случае gitHub может дополнительно запросить ввести логин и пароль. А начиная с 13.08.2021 - логин и токен.
+                Этот токен кстати делается максимум на год. GitHub Prifile > Settings > Developer Settings > Personal Access Tokens</li>
+        </ul>
     </div>
 </div>
 
